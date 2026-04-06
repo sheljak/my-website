@@ -1,50 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
-  <title>The Access Platform | Help Center</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { height: 100%; width: 100%; background: #fff; overflow: hidden; }
-    #tawk-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; }
-    #tawk-container iframe { width: 100% !important; height: 100% !important; border: none; }
-  </style>
-</head>
-<body>
-<div id="tawk-container"></div>
-<script type="text/javascript">
-  var params = Object.fromEntries(new URLSearchParams(window.location.search).entries());
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self'
+  'unsafe-inline' 'unsafe-eval' https://*.tawk.to https://*.tawkcdn.com blob:;">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+  maximum-scale=1.0, user-scalable=0">
+    <title>The Access Platform | Help Center</title>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { height: 100%; width: 100%; background: #fff; overflow:
+  hidden; }
+      #tawk-container { position: fixed; top: 0; left: 0; width: 100%; height:
+  100%; }
+      #tawk-container iframe { width: 100% !important; height: 100% !important;
+  border: none; }
+    </style>
+  </head>
+  <body>
+  <div id="tawk-container"></div>
 
-  window.Tawk_API = window.Tawk_API || {};
-  window.Tawk_LoadStart = new Date();
-  window.Tawk_API.embedded = 'tawk-container';
-  window.Tawk_API.autoStart = false;
+  <script type="text/javascript">
+    var params = Object.fromEntries(new
+  URLSearchParams(window.location.search).entries());
 
-  window.Tawk_API.onLoad = function () {
-    if (params.userId && params.hash) {
-      window.Tawk_API.login({
-        hash:   params.hash,
-        userId: params.userId,
-        name:   decodeURIComponent(params.name  || ''),
-        email:  decodeURIComponent(params.email || '')
-      }, function (error) {
-        if (error) { console.error('[Tawk] login error:', error); }
-      });
-    }
+    var Tawk_API = Tawk_API || {};
+    var Tawk_LoadStart = new Date();
 
-    window.Tawk_API.start({ showWidget: true });
-    window.Tawk_API.maximize();
-  };
+    Tawk_API.embedded = 'tawk-container';
 
-  (function () {
-    var s = document.createElement('script');
-    s.async = true;
-    s.charset = 'UTF-8';
-    s.setAttribute('crossorigin', '*');
-    s.src = 'https://embed.tawk.to/69ba899378528f1c35000cfb/1jk0aipu2';
-    document.body.appendChild(s);
+    Tawk_API.onLoad = function () {
+      Tawk_API.showWidget();
+      Tawk_API.maximize();
+
+      if (params.userId && params.hash) {
+        Tawk_API.login({
+          hash:   params.hash,
+          userId: params.userId,
+          name:   decodeURIComponent(params.name  || ''),
+          email:  decodeURIComponent(params.email || '')
+        }, function (error) {
+          if (error) { console.error('[Tawk] login error:', error); }
+        });
+      }
+    };
+  </script>
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("scri
+  pt")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/69ba899378528f1c35000cfb/1jk0aipu2';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
   })();
-</script>
-</body>
-</html>
+  </script>
+  <!--End of Tawk.to Scriptzz-->
+
+  </body>
+  </html>
