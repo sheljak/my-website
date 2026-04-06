@@ -16,25 +16,26 @@ html, body { height: 100%; width: 100%; background: #fff; overflow: hidden; }
 <div id="tawk-container"></div>
 <script type="text/javascript">
 var params = Object.fromEntries(new URLSearchParams(window.location.search).entries());
-var Tawk_API = Tawk_API || {};
-var Tawk_LoadStart = new Date();
-Tawk_API.embedded = "tawk-container";
+window.Tawk_API = window.Tawk_API || {};
+window.Tawk_LoadStart = new Date();
+window.Tawk_API.embedded = "tawk-container";
 
 if (params.email && params.hash) {
-  Tawk_API.visitor = {
+  window.Tawk_API.visitor = {
     name:  decodeURIComponent(params.name  || ""),
     email: decodeURIComponent(params.email || ""),
     hash:  params.hash
   };
 }
 
-Tawk_API.onLoad = function() {
-  Tawk_API.showWidget();
-  Tawk_API.maximize();
+window.Tawk_API.onLoad = function() {
+  window.Tawk_API.showWidget();
+  window.Tawk_API.maximize();
 };
 </script>
 <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+window.Tawk_API = window.Tawk_API || {};
+window.Tawk_LoadStart = new Date();
 (function(){
 var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
 s1.async=true;
