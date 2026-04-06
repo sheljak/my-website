@@ -16,21 +16,31 @@ html, body { height: 100%; width: 100%; background: #fff; overflow: hidden; }
 <div id="tawk-container"></div>
 <script type="text/javascript">
 var params = Object.fromEntries(new URLSearchParams(window.location.search).entries());
+var storageKey = "_tawkLogin_" + (params.userId || "guest");
+localStorage.removeItem(storageKey);
 window.Tawk_API = window.Tawk_API || {};
 window.Tawk_LoadStart = new Date();
 window.Tawk_API.embedded = "tawk-container";
-
-if (params.email && params.hash) {
-  window.Tawk_API.visitor = {
-    name:  decodeURIComponent(params.name  || ""),
-    email: decodeURIComponent(params.email || ""),
-    hash:  params.hash
-  };
-}
-
 window.Tawk_API.onLoad = function() {
   window.Tawk_API.showWidget();
   window.Tawk_API.maximize();
+  if (localStorage.getItem(storageKey)) return;
+  if (params.userId && params.hash) {
+    localStorage.setItem(storageKey, "1");
+    window.Tawk_API.login({
+      hash:   params.hash,
+      userId: params.userId,
+      name:   decodeURIComponent(params.name  || ""),
+      email:  decodeURIComponent(params.email || "")
+    }, function(error) {
+      if (error) {
+        localStorage.removeItem(storageKey);
+        console.error("[Tawk] login error:", error);
+      } else {
+        console.log("[Tawk] login success userId=" + params.userId);
+      }
+    });
+  }
 };
 </script>
 <script type="text/javascript">
