@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <title>Help Center</title>
+  <title>Help Center1</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; width: 100%; overflow: hidden; }
@@ -15,21 +15,24 @@
 <div id="c"></div>
 <script>
   var params = new URLSearchParams(window.location.search);
-  var name  = params.get('name')  || '';
-  var email = params.get('email') || '';
-  var hash  = params.get('hash')  || '';
+  var name   = params.get('name')   || '';
+  var email  = params.get('email')  || '';
+  var hash   = params.get('hash')   || '';
   var userId = params.get('userId') || '';
 
   window.Tawk_API = {};
   window.Tawk_API.embedded = 'c';
 
-  if (name || email) {
-    window.Tawk_API.visitor = {};
-    if (name)  window.Tawk_API.visitor.name  = name;
-    if (email) window.Tawk_API.visitor.email = email;
-    if (userId) window.Tawk_API.visitor.userId = userId;
-    if (hash)  window.Tawk_API.visitor.hash  = hash;
-  }
+  window.Tawk_API.onLoad = function() {
+    if (hash && userId) {
+      var attrs = { hash: hash, userId: userId };
+      if (name)  attrs.name  = name;
+      if (email) attrs.email = email;
+      window.Tawk_API.login(attrs, function(error) {
+        if (error) console.error('[Tawk] login error:', JSON.stringify(error));
+      });
+    }
+  };
 
   (function() {
     var s = document.createElement('script');
