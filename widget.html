@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <title>Help Center1</title>
+  <title>Help Center</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; width: 100%; overflow: hidden; }
@@ -28,8 +28,10 @@
       var attrs = { hash: hash, userId: userId };
       if (name)  attrs.name  = name;
       if (email) attrs.email = email;
-      window.Tawk_API.login(attrs, function(error) {
-        if (error) console.error('[Tawk] login error:', JSON.stringify(error));
+      window.Tawk_API.logout(function() {
+        window.Tawk_API.login(attrs, function(error) {
+          if (error) console.error('[Tawk] login error:', JSON.stringify(error));
+        });
       });
     }
   };
