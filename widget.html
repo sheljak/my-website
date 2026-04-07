@@ -16,44 +16,20 @@
 <script>
   window.Tawk_API = { embedded: 'c' };
 
+  // Set visitor identity from URL params before the Tawk script loads
+  var p = new URLSearchParams(window.location.search);
+  var vName = p.get('name'), vEmail = p.get('email'), vHash = p.get('hash');
+  if (vName) {
+    Tawk_API.visitor = Object.assign(
+      { name: vName, hash: vHash || '' },
+      vEmail ? { email: vEmail } : {}
+    );
+  }
+
   function log(msg, extra) {
     window.ReactNativeWebView && window.ReactNativeWebView.postMessage(
       JSON.stringify(Object.assign({ type: 'tawk_log', msg: msg }, extra || {}))
     );
-  }
-
-  function loginUser(data) {
-    log('calling login', { userId: data.userId });
-    Tawk_API.login(data, function(error) {
-      if (error) { log('login error', { error: JSON.stringify(error) }); }
-      else        { log('login success', { userId: data.userId }); }
-    });
-  }
-
-  function updateAttributes(data) {
-    log('setting attributes', { name: data.name });
-    Tawk_API.setAttributes({ name: data.name, email: data.email }, function(error) {
-      if (error) { log('setAttributes error', { error: JSON.stringify(error) }); }
-      else        { log('setAttributes success'); }
-    });
-  }
-
-  // Messages from React Native
-  window.addEventListener('message', function(e) {
-    try {
-      var msg = JSON.parse(e.data);
-      if (msg.type === 'tawk_login')           { loginUser(msg.data); }
-      if (msg.type === 'tawk_set_attributes')  { updateAttributes(msg.data); }
-    } catch(_) {}
-  });
-
-  // Browser fallback: URL params
-  var p = new URLSearchParams(window.location.search);
-  var userId = p.get('userId');
-  if (userId && p.get('hash')) {
-    Tawk_API.onLoad = function() {
-      loginUser({ hash: p.get('hash'), userId: userId, name: p.get('name') || '' });
-    };
   }
 
   (function() {
