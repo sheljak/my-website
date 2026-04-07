@@ -16,24 +16,18 @@
 <div id="c"></div>
 <script>
   var params = new URLSearchParams(window.location.search);
-  var name   = params.get('name')   || '';
-  var email  = params.get('email')  || '';
-  var hash   = params.get('hash')   || '';
-  var userId = params.get('userId') || '';
+  var name  = params.get('name')  || '';
+  var email = params.get('email') || '';
+  var hash  = params.get('hash')  || '';
 
   window.Tawk_API = {};
   window.Tawk_API.embedded = 'c';
 
-  if (hash && userId) {
-    var _loggedIn = false;
-    window.Tawk_API.onLoad = function() {
-      if (_loggedIn) return;
-      _loggedIn = true;
-      var attrs = { hash: hash, userId: userId };
-      if (name)  attrs.name  = name;
-      if (email) attrs.email = email;
-      window.Tawk_API.login(attrs);
-    };
+  if (name || email) {
+    window.Tawk_API.visitor = {};
+    if (name)  window.Tawk_API.visitor.name  = name;
+    if (email) window.Tawk_API.visitor.email = email;
+    if (hash)  window.Tawk_API.visitor.hash  = hash;
   }
 
   (function() {
