@@ -22,15 +22,6 @@
     );
   }
 
-  function clearSession() {
-    try { localStorage.clear(); } catch(_) {}
-    try {
-      document.cookie.split(';').forEach(function(c) {
-        document.cookie = c.replace(/^ +/, '').replace(/=.*/, '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/');
-      });
-    } catch(_) {}
-  }
-
   function loginUser(data) {
     log('calling login', { userId: data.userId });
     Tawk_API.login(data, function(error) {
@@ -39,13 +30,11 @@
     });
   }
 
-  function switchUser(data) {
-    log('switching user', { userId: data.userId });
-    Tawk_API.logout(function(error) {
-      if (error) { log('logout error', { error: JSON.stringify(error) }); }
-      else        { log('logout success'); }
-      clearSession();
-      loginUser(data);
+  function updateAttributes(data) {
+    log('setting attributes', { name: data.name });
+    Tawk_API.setAttributes({ name: data.name, email: data.email }, function(error) {
+      if (error) { log('setAttributes error', { error: JSON.stringify(error) }); }
+      else        { log('setAttributes success'); }
     });
   }
 
@@ -53,8 +42,8 @@
   window.addEventListener('message', function(e) {
     try {
       var msg = JSON.parse(e.data);
-      if (msg.type === 'tawk_login')  { loginUser(msg.data); }
-      if (msg.type === 'tawk_switch') { switchUser(msg.data); }
+      if (msg.type === 'tawk_login')           { loginUser(msg.data); }
+      if (msg.type === 'tawk_set_attributes')  { updateAttributes(msg.data); }
     } catch(_) {}
   });
 
