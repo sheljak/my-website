@@ -16,18 +16,54 @@
 <script>
   window.Tawk_API = { embedded: 'c' };
 
+  function log(msg, extra) {
+    window.ReactNativeWebView && window.ReactNativeWebView.postMessage(
+      JSON.stringify(Object.assign({ type: 'tawk_log', msg: msg }, extra || {}))
+    );
+  }
+
+  function clearSession() {
+    try { localStorage.clear(); } catch(_) {}
+    try {
+      document.cookie.split(';').forEach(function(c) {
+        document.cookie = c.replace(/^ +/, '').replace(/=.*/, '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/');
+      });
+    } catch(_) {}
+  }
+
+  function loginUser(data) {
+    log('calling login', { userId: data.userId });
+    Tawk_API.login(data, function(error) {
+      if (error) { log('login error', { error: JSON.stringify(error) }); }
+      else        { log('login success', { userId: data.userId }); }
+    });
+  }
+
+  function switchUser(data) {
+    log('switching user', { userId: data.userId });
+    Tawk_API.logout(function(error) {
+      if (error) { log('logout error', { error: JSON.stringify(error) }); }
+      else        { log('logout success'); }
+      clearSession();
+      loginUser(data);
+    });
+  }
+
+  // Messages from React Native
+  window.addEventListener('message', function(e) {
+    try {
+      var msg = JSON.parse(e.data);
+      if (msg.type === 'tawk_login')  { loginUser(msg.data); }
+      if (msg.type === 'tawk_switch') { switchUser(msg.data); }
+    } catch(_) {}
+  });
+
   // Browser fallback: URL params
   var p = new URLSearchParams(window.location.search);
   var userId = p.get('userId');
-  var hash   = p.get('hash');
-  if (userId && hash) {
+  if (userId && p.get('hash')) {
     Tawk_API.onLoad = function() {
-      Tawk_API.login({
-        hash:   hash,
-        userId: userId,
-        name:   p.get('name')  || '',
-        email:  p.get('email') || '',
-      }, function() {});
+      loginUser({ hash: p.get('hash'), userId: userId, name: p.get('name') || '' });
     };
   }
 
