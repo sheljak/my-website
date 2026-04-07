@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-	<meta name="description" content="The Ambassador Platform resources">
-	<title>The Ambassador Platform | Help Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <title>Help Center</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; width: 100%; overflow: hidden; }
@@ -18,6 +18,7 @@
   var name  = params.get('name')  || '';
   var email = params.get('email') || '';
   var hash  = params.get('hash')  || '';
+  var userId = params.get('userId') || '';
 
   window.Tawk_API = {};
   window.Tawk_API.embedded = 'c';
@@ -26,6 +27,7 @@
     window.Tawk_API.visitor = {};
     if (name)  window.Tawk_API.visitor.name  = name;
     if (email) window.Tawk_API.visitor.email = email;
+    if (userId) window.Tawk_API.visitor.userId = userId;
     if (hash)  window.Tawk_API.visitor.hash  = hash;
   }
 
