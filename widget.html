@@ -17,11 +17,16 @@
   var p = new URLSearchParams(window.location.search);
   var vName = p.get('name'), vEmail = p.get('email'), vHash = p.get('hash');
 
+  // Strip params from URL so Tawk dashboard shows only the base URL
+  history.replaceState(null, '', window.location.pathname);
+
   window.Tawk_API = { embedded: 'c' };
 
   if (vName && vHash) {
     Tawk_API.onLoad = function() {
-      Tawk_API.setAttributes({ name: vName, email: vEmail, hash: vHash }, function(err) {
+      var attrs = { name: vName, hash: vHash };
+      if (vEmail) attrs.email = vEmail;
+      Tawk_API.setAttributes(attrs, function(err) {
         window.ReactNativeWebView && window.ReactNativeWebView.postMessage(
           JSON.stringify({ type: 'tawk_log', msg: err ? 'err: ' + err : 'ok' })
         );
