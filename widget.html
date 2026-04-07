@@ -14,22 +14,19 @@
 <body>
 <div id="c"></div>
 <script>
-  window.Tawk_API = { embedded: 'c' };
-
-  // Set visitor identity from URL params before the Tawk script loads
   var p = new URLSearchParams(window.location.search);
   var vName = p.get('name'), vEmail = p.get('email'), vHash = p.get('hash');
-  if (vName) {
-    Tawk_API.visitor = Object.assign(
-      { name: vName, hash: vHash || '' },
-      vEmail ? { email: vEmail } : {}
-    );
-  }
 
-  function log(msg, extra) {
-    window.ReactNativeWebView && window.ReactNativeWebView.postMessage(
-      JSON.stringify(Object.assign({ type: 'tawk_log', msg: msg }, extra || {}))
-    );
+  window.Tawk_API = { embedded: 'c' };
+
+  if (vName && vHash) {
+    Tawk_API.onLoad = function() {
+      Tawk_API.setAttributes({ name: vName, email: vEmail, hash: vHash }, function(err) {
+        window.ReactNativeWebView && window.ReactNativeWebView.postMessage(
+          JSON.stringify({ type: 'tawk_log', msg: err ? 'err: ' + err : 'ok' })
+        );
+      });
+    };
   }
 
   (function() {
