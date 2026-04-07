@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-  <meta name="description" content="The Ambassador Platform resources">
-	<title>The Ambassador Platform | Resources</title>
+  <title>The Ambassador Platform</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; width: 100%; overflow: hidden; }
@@ -15,28 +14,20 @@
 <body>
 <div id="c"></div>
 <script>
-  var params = new URLSearchParams(window.location.search);
-  var name  = params.get('name')  || '';
-  var email = params.get('email') || '';
-  var hash  = params.get('hash')  || '';
+  window.Tawk_API = { embedded: 'c' };
 
-  window.Tawk_API = {};
-  window.Tawk_API.embedded = 'c';
-
-  if (name || email) {
-    window.Tawk_API.visitor = {};
-    if (name)  window.Tawk_API.visitor.name  = name;
-    if (email) window.Tawk_API.visitor.email = email;
-    if (hash)  window.Tawk_API.visitor.hash  = hash;
-  }
-
-  if (name || email) {
-    window.Tawk_API.onLoad = function() {
-      var attrs = {};
-      if (name)  attrs.name  = name;
-      if (email) attrs.email = email;
-      if (hash)  attrs.hash  = hash;
-      Tawk_API.setAttributes(attrs, function() {});
+  // Browser fallback: URL params
+  var p = new URLSearchParams(window.location.search);
+  var userId = p.get('userId');
+  var hash   = p.get('hash');
+  if (userId && hash) {
+    Tawk_API.onLoad = function() {
+      Tawk_API.login({
+        hash:   hash,
+        userId: userId,
+        name:   p.get('name')  || '',
+        email:  p.get('email') || '',
+      }, function() {});
     };
   }
 
