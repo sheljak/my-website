@@ -9,6 +9,7 @@
     html, body { height: 100%; width: 100%; overflow: hidden; }
     #c { position: fixed; inset: 0; }
     #c iframe { width: 100% !important; height: 100% !important; border: none; }
+    .tawk-bottom-navbar.tawk-bottom-navbar-offset
   </style>
 </head>
 <body>
@@ -24,6 +25,10 @@
 
   if (vName && vHash) {
     Tawk_API.onLoad = function() {
+      Tawk_API.setStyle({
+        position: 'br',
+        bottom: 0
+      });
       var attrs = { name: vName, hash: vHash };
       if (vEmail) attrs.email = vEmail;
       Tawk_API.setAttributes(attrs, function(err) {
