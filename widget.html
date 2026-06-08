@@ -1210,7 +1210,8 @@
 				
 									<p><iframe data-type="full-widget" data-university-id="109" height="700" id="tap-iframe-widget" scrolling="no" src="" style="border: none;" width="100%"></iframe>
 <script defer="defer">
-/* eslint-env browser */
+
+  /* eslint-env browser */
 /* global document, window */
 /**
  * Replaces the iframe#tap-iframe-widget with an inline widget:
@@ -1222,7 +1223,7 @@
  * data-university-id / data-group-id) are not yet ready for the new
  * implementation and will fall back to the old iframe-based widget_old.js.
  */
- (function () {
+(function () {
   // University IDs (strings, data-university-id) → old iframe widget.
   var LEGACY_UNIVERSITY_IDS = [
     "2102", // Sheridan College
@@ -1318,14 +1319,16 @@
     parent.replaceChild(wrapper, iframe);
 
     // Shield the widget from jQuery's document-level event delegation.
-    // jQuery (loaded after this script) intercepts events bubbling out of the shadow DOM,
-    // causing buttons/tabs to require a double-press. Always stop propagation at the
-    // wrapper boundary so jQuery never sees these events; harmless on jQuery-free pages.
-    ["click", "mousedown", "mouseup", "keydown", "keyup"].forEach(function (type) {
-      wrapper.addEventListener(type, function (e) {
-        e.stopPropagation();
+    // jQuery intercepts events bubbling out of the shadow DOM, causing buttons/tabs
+    // to require a double-press. Stop propagation at the wrapper boundary so jQuery
+    // never sees these events, while the shadow DOM handles them normally.
+    if (window.jQuery || window.$) {
+      ["click", "mousedown", "mouseup", "keydown", "keyup", "touchstart", "touchend"].forEach(function (type) {
+        wrapper.addEventListener(type, function (e) {
+          e.stopPropagation();
+        });
       });
-    });
+    }
 
     window.tap3Props = {
       API_TYPE: "tap",
@@ -1335,7 +1338,7 @@
     var loaderScript = document.createElement("script");
     loaderScript.crossOrigin = "anonymous";
     loaderScript.async = true;
-    var loaderFromEnv = "https://tappage.tap.st/";
+    var loaderFromEnv = 'https://tappage.tap.st/';
     loaderScript.src =
       (loaderFromEnv && loaderFromEnv.length > 0 ? loaderFromEnv : base) +
       "widget-loader.js";
@@ -1351,7 +1354,6 @@
     initWidget();
   }
 })();
-
 
 </script></p>
 							
@@ -1493,14 +1495,14 @@
 
  
 
-<!-- <script crossorigin="anonymous" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script crossorigin="anonymous" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script type="text/javascript">
     /* if jQuery won't load from google CDN, load it from Usask CDN    */
     /* need to use 'usescape' to cooperate with Cascade XML validation */
     if (typeof jQuery == 'undefined') {
         document.write(unescape("%3Cscript src='//usaskcdn.ca/limestone/stable/js/jquery-3.6.0.min.js' type='text/javascript'%3E%3C/script%3E"));
     }
-</script> -->
+</script>
 <script src="https://usaskcdn.ca/limestone/stable/js/limestone.min.js"></script>
 <script src="https://limestone.usask.ca/limestone/1.4.0/js/embedded-feed.min.js" type="text/javascript"></script>
 
