@@ -1208,7 +1208,7 @@
 				
 				
 				
-									<p><iframe data-type="full-widget" data-university-id="100061" height="700" id="tap-iframe-widget" scrolling="no" src="" style="border: none;" width="100%"></iframe>
+									<p><iframe data-type="full-widget" data-university-id="109" height="700" id="tap-iframe-widget" scrolling="no" src="" style="border: none;" width="100%"></iframe>
 <script defer="defer">
 
   /* eslint-env browser */
@@ -1323,7 +1323,7 @@
     // to require a double-press. Stop propagation at the wrapper boundary so jQuery
     // never sees these events, while the shadow DOM handles them normally.
     if (window.jQuery || window.$) {
-      ["click", "mousedown", "mouseup", "keydown", "keyup", "touchstart", "touchend"].forEach(function (type) {
+      ["touchstart", "touchend"].forEach(function (type) {
         wrapper.addEventListener(type, function (e) {
           e.stopPropagation();
         });
