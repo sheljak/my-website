@@ -1,135 +1,1365 @@
 
-<!doctype html><html lang="en" dir="ltr"><head><meta charset="utf-8"/><title data-react-helmet="true">Chat to our students | University of Sunderland</title> <meta data-react-helmet="true" name="description" content/><meta data-react-helmet="true" property="og:site_name" content="The University of Sunderland"/><meta data-react-helmet="true" property="og:title" content="Chat to our students"/><meta data-react-helmet="true" property="og:description" content/><meta data-react-helmet="true" property="og:image" content/><meta data-react-helmet="true" property="og:image:alt" content/><meta data-react-helmet="true" property="og:image:width" content="1200"/><meta data-react-helmet="true" property="og:image:height" content="630"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" property="og:locale" content="en_GB"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:title" content="Chat to our students"/><meta data-react-helmet="true" name="twitter:description" content/><meta data-react-helmet="true" name="twitter:image" content/><meta data-react-helmet="true" name="twitter:image:alt" content/><meta data-react-helmet="true" name="IDL:ProjectId" content="website"/><script data-react-helmet="true" defer="true" src="https://cdn.theaccessplatform.com/widget.js"></script><meta name="viewport" content="width=device-width,initial-scale=1"/><meta http-equiv="X-UA-Compatible" content="ie=edge"><link rel="icon" href="/_83dEUg_ba5a46d7-8343-45fd-809f-d7449e8126d9/static/icon/favicon.ico" sizes="32x32"><link rel="icon" href="/_83dEUg_ba5a46d7-8343-45fd-809f-d7449e8126d9/static/icon/icon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/_83dEUg_ba5a46d7-8343-45fd-809f-d7449e8126d9/static/icon/apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#F7F9FA"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#195A91"><link rel="manifest" href="/_83dEUg_ba5a46d7-8343-45fd-809f-d7449e8126d9/static/manifest.webmanifest"><style data-styled="true" data-styled-version="6.1.13">*,*::before,*::after{box-sizing:border-box;}/*!sc*/
-  :root{scroll-behavior:smooth;--grid-max-width:95rem;--grid-gutter:var(--space-s-l,clamp(1rem,0.5916rem + 1.992vw,2.25rem));--grid-columns:12;--grid-layout:repeat(var(--grid-columns),1fr);--content-flow:var(--font-size-1,1em);--font-size--1:clamp(0.8333rem,0.7962rem + 0.1812vw,0.9375rem);--font-size-0:clamp(1rem,0.9554rem + 0.2174vw,1.125rem);--font-size-1:clamp(1.2rem,1.1465rem + 0.2609vw,1.35rem);--font-size-2:clamp(1.44rem,1.3758rem + 0.313vw,1.62rem);--font-size-3:clamp(1.728rem,1.651rem + 0.3757vw,1.944rem);--font-size-4:clamp(2.0736rem,1.9812rem + 0.4508vw,2.3328rem);--font-size-5:clamp(2.4883rem,2.3774rem + 0.5409vw,2.7994rem);--font-size-6:clamp(2.986rem,2.8529rem + 0.6491vw,3.3592rem);--font-size-7:clamp(3.5832rem,3.4235rem + 0.779vw,4.0311rem);--font-size-8:clamp(4.2998rem,4.1082rem + 0.9347vw,4.8373rem);--font-size-9:clamp(5.1598rem,4.9298rem + 1.1217vw,5.8048rem);--space-3xs:clamp(0.25rem,0.2277rem + 0.1087vw,0.3125rem);--space-2xs:clamp(0.5rem,0.4777rem + 0.1087vw,0.5625rem);--space-xs:clamp(0.75rem,0.7054rem + 0.2174vw,0.875rem);--space-s:clamp(1rem,0.9554rem + 0.2174vw,1.125rem);--space-m:clamp(1.5rem,1.4332rem + 0.3261vw,1.6875rem);--space-l:clamp(2rem,1.9109rem + 0.4348vw,2.25rem);--space-xl:clamp(3rem,2.8663rem + 0.6522vw,3.375rem);--space-2xl:clamp(4rem,3.8217rem + 0.8696vw,4.5rem);--space-3xl:clamp(6rem,5.7326rem + 1.3043vw,6.75rem);--space-3xs-2xs:clamp(0.25rem,0.1386rem + 0.5435vw,0.5625rem);--space-2xs-xs:clamp(0.5rem,0.3663rem + 0.6522vw,0.875rem);--space-xs-s:clamp(0.75rem,0.6163rem + 0.6522vw,1.125rem);--space-s-m:clamp(1rem,0.7549rem + 1.1957vw,1.6875rem);--space-m-l:clamp(1.5rem,1.2326rem + 1.3043vw,2.25rem);--space-l-xl:clamp(2rem,1.5098rem + 2.3913vw,3.375rem);--space-xl-2xl:clamp(3rem,2.4652rem + 2.6087vw,4.5rem);--space-2xl-3xl:clamp(4rem,3.0196rem + 4.7826vw,6.75rem);--space-s-l:clamp(1rem,0.5543rem + 2.1739vw,2.25rem);--space-xl-2xl:clamp(3rem,2.4652rem + 2.6087vw,4.5rem);--space-xl-3xl:clamp(3rem,1.663rem + 6.5217vw,6.75rem);--space-l-3xl:clamp(2rem,0.3065rem + 8.2609vw,6.75rem);}/*!sc*/
-  .u-container{max-width:var(--grid-max-width);padding-inline:var(--grid-gutter);margin-inline:auto;}/*!sc*/
-  .u-grid{display:grid;gap:var(--grid-gutter);}/*!sc*/
-  #root{isolation:isolate;min-height:inherit;}/*!sc*/
-  #app-root,#main{min-height:inherit;}/*!sc*/
-  *{margin:0;}/*!sc*/
-  html{-moz-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none;}/*!sc*/
-  body{min-height:100vh;font-family:"Roboto",Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:var(--font-size-0);line-height:1.5;color:#323232;}/*!sc*/
-  a{color:#0069FA;text-decoration-skip-ink:auto;}/*!sc*/
-  a:not([class]){font-weight:500;text-underline-offset:max(2px,0.125rem);text-decoration-thickness:max(2px,0.125rem);}/*!sc*/
-  *:focus-visible{outline:0px;box-shadow:#FFFFFF 0px 0px 0px 2px,#5031BE 0px 0px 0px 5px;}/*!sc*/
-  ul[role='list'],ol[role='list']{list-style:none;}/*!sc*/
-  img,picture,video,canvas,svg{display:block;max-width:100%;height:auto;}/*!sc*/
-  img{width:100%;}/*!sc*/
-  input,button,textarea,select{font:inherit;}/*!sc*/
-  html,body{scroll-behavior:smooth;}/*!sc*/
-  @media (prefers-reduced-motion:reduce){html:focus-within{scroll-behavior:smooth;}*,*::before,*::after{animation-duration:0.01ms!important;animation-iteration-count:1!important;transition-duration:0.01ms!important;scroll-behavior:auto!important;}}/*!sc*/
-  .visually-hidden,.sr-only{clip:rect(0 0 0 0);clip-path:inset(50%);height:1px;overflow:hidden;position:absolute;white-space:nowrap;width:1px;}/*!sc*/
-  .h0{font-family:Poppins,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:var(--font-size-7);font-weight:700;line-height:1.08;}/*!sc*/
-  h1,.h1{font-family:Poppins,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:var(--font-size-6);font-weight:700;line-height:1.08;}/*!sc*/
-  h2,.h2{font-family:Poppins,Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:var(--font-size-5);font-weight:700;line-height:1.15;}/*!sc*/
-  h3,.h3{font-family:"Roboto",Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:var(--font-size-4);font-weight:700;line-height:1.15;}/*!sc*/
-  h4,.h4{font-family:"Roboto",Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:var(--font-size-3);font-weight:700;line-height:1.15;}/*!sc*/
-  h5,.h5{font-family:"Roboto",Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:var(--font-size-2);font-weight:700;line-height:1.15;}/*!sc*/
-  h6,.h6{font-family:"Roboto",Arial,"Helvetica Neue",Helvetica,sans-serif;font-size:var(--font-size-1);font-weight:700;line-height:1.15;}/*!sc*/
-  p{font-size:var(--font-size-0);line-height:1.5;}/*!sc*/
-  p.lead{font-size:var(--font-size-1);line-height:1.5;}/*!sc*/
-  small,p.small{font-size:var(--font-size--1);line-height:1.5;}/*!sc*/
-  .flow>*+*{margin-block-start:var(--content-flow);}/*!sc*/
-  #ccc-popup,#ccc-content{background:#0069FA;}/*!sc*/
-  #ccc-icon{fill:#0069FA!important;}/*!sc*/
-  .checkbox-toggle-toggle{background:#dddddd!important;}/*!sc*/
-  .ccc-content--dark{background:#0069FA!important;}/*!sc*/
-  data-styled.g2[id="sc-global-fciPWp1"]{content:"sc-global-fciPWp1,"}/*!sc*/
-  @media print{*,*:before,*:after,p:first-letter,div:first-letter,blockquote:first-letter,li:first-letter,p:first-line,div:first-line,blockquote:first-line,li:first-line{background:transparent!important;color:#000!important;box-shadow:none!important;text-shadow:none!important;}html{font-size:16px;margin:0;padding:0;}body{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;background:#fff!important;color:#000!important;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:1rem;line-height:1.5;margin:0 auto;padding:2.54cm 1.8cm;text-rendering:optimizeLegibility;}p,blockquote,table,ul,ol,dl{margin-top:0;margin-bottom:1.5rem;}p:last-child,ul:last-child,ol:last-child{margin-bottom:0;}h1,h2,h3,h4,h5,h6{color:#000;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;line-height:1.2;margin-top:0;margin-bottom:0.75rem;page-break-after:avoid;page-break-inside:avoid;}h1{font-size:2.5rem;}h2{font-size:2rem;}h3{font-size:1.75rem;}h4{font-size:1.5rem;}h5{font-size:1.25rem;}h6{font-size:1rem;}a,a:visited{color:#000;text-decoration:underline;word-wrap:break-word;}a[href^='http']:after,a[href^='ftp']:after{content:' (' attr(href) ')';font-size:80%;}a[href$='.jpg']:after,a[href$='.jpeg']:after,a[href$='.gif']:after,a[href$='.png']:after{display:none;}a.no-reformat:after{content:'';}table{border-collapse:collapse;page-break-inside:avoid;}th,td{border-bottom:1px solid #000;padding:8px 16px;page-break-inside:avoid;}thead{display:table-header-group;}code,pre,kbd{border:1px solid #bbb;font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:85%;}code,kbd{padding:3px;}pre{padding:10px 12px;margin-bottom:1.5rem;white-space:pre-wrap!important;word-wrap:break-word;}pre code,pre kbd{border:0;}blockquote{border-left:5px solid #bbb;margin-left:1px;padding:12px 1.5rem;page-break-inside:avoid;}[dir='rtl'] blockquote{border-left:0;border-right:5px solid #bbb;margin-left:0;margin-right:1px;}blockquote:first-child{margin-top:0;}blockquote p:last-child,blockquote ul:last-child,blockquote ol:last-child{margin-bottom:0;}blockquote footer{display:block;font-size:80%;}img{border:0;display:block;max-width:100%!important;page-break-after:auto;page-break-before:auto;page-break-inside:avoid;}hr{border:0;border-bottom:2px solid #bbb;margin:2.25rem 0;}dt{font-weight:bold;}dd{margin:0 0 0.75rem;}abbr[title],acronym[title]{border:0;text-decoration:none;}abbr[title]:after,acronym[title]:after{content:' (' attr(title) ')';}abbr[title].no-reformat:after,acronym[title].no-reformat:after{content:'';}.no-reformat abbr:after,.no-reformat acronym:after,.no-reformat a:after{content:'';}.page-break,.break-before,.page-break-before{page-break-before:always;}.break-after,.page-break-after{page-break-after:always;}.avoid-break-inside{page-break-inside:avoid;}::-webkit-input-placeholder,:-moz-placeholder,::-moz-placeholder,:-ms-input-placeholder{color:transparent;}h2,h3,h4,p,a{orphans:3;widows:3;}h1+p,h2+p,h3+p{page-break-before:avoid;}.no-print{display:none;}}/*!sc*/
-  data-styled.g3[id="sc-global-bGsyvz1"]{content:"sc-global-bGsyvz1,"}/*!sc*/
-  .jeMuAR{max-width:var(--grid-max-width);padding-inline:var(--grid-gutter);margin-inline:auto;}/*!sc*/
-  data-styled.g4[id="containercomponent__ContainerStyled-sc-qfbqdf-0"]{content:"jeMuAR,"}/*!sc*/
-  .gbsum{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:var(--space-2xs);}/*!sc*/
-  @media only screen and (min-width: 48rem){.gbsum{flex-wrap:nowrap;}}/*!sc*/
-  .gbsum li a{display:flex;text-decoration:none;color:inherit;padding:var(--space-m) var(--space-s) 1rem 1rem;}/*!sc*/
-  .gbsum li a:hover{background:#F7F9FA;}/*!sc*/
-  .gbsum li .social-icon{display:inline-block;flex-shrink:0;}/*!sc*/
-  data-styled.g5[id="socialLinkscomponent__SocialShareStyled-sc-l5c3qc-0"]{content:"gbsum,"}/*!sc*/
-  .eyGxYL{--background-icon:#F7F9FA;position:relative;display:flex;justify-content:center;align-items:center;background-color:#FFFFFF;padding-top:var(--space-2xl-3xl);}/*!sc*/
-  .eyGxYL::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:var(--background-icon);clip-path:polygon(0% 2%,100% 0%,100% 100%,0% 100%);pointer-events:none;z-index:0;}/*!sc*/
-  @media only screen and (min-width: 48rem){.eyGxYL::before{clip-path:polygon(0% 10%,100% 0%,100% 100%,0% 100%);}}/*!sc*/
-  .eyGxYL .footer__content-container{display:flex;justify-content:space-between;align-items:center;flex-direction:column;width:100%;z-index:1;}/*!sc*/
-  .eyGxYL .footer__logo-container{display:flex;flex-direction:column;gap:var(--space-m);align-items:center;}/*!sc*/
-  @media only screen and (min-width: 48rem){.eyGxYL .footer__logo-container{flex-direction:row;align-items:unset;}}/*!sc*/
-  .eyGxYL .footer__logo-container .logo{max-height:88px;max-width:190px;}/*!sc*/
-  .eyGxYL .footer__logo-container .tef{max-height:88px;max-width:176px;}/*!sc*/
-  .eyGxYL .footer__top-row{display:flex;flex-direction:column;justify-content:space-between;width:100%;padding-bottom:var(--space-xl);gap:var(--space-xl);}/*!sc*/
-  @media only screen and (min-width: 62rem){.eyGxYL .footer__top-row{flex-direction:row;}}/*!sc*/
-  .eyGxYL .footer__second-row,.eyGxYL .footer__third-row{display:flex;flex-direction:column;justify-content:space-between;width:100%;padding-bottom:var(--space-xl);gap:var(--space-xl);}/*!sc*/
-  @media only screen and (min-width: 48rem){.eyGxYL .footer__second-row,.eyGxYL .footer__third-row{flex-direction:row;}}/*!sc*/
-  .eyGxYL .footer__second-row-list-container{display:flex;justify-content:center;gap:var(--space-m);}/*!sc*/
-  .eyGxYL .footer__top-row{align-items:center;}/*!sc*/
-  .eyGxYL .footer__second-row{align-items:center;}/*!sc*/
-  @media only screen and (min-width: 48rem){.eyGxYL .footer__second-row{align-items:flex-start;}.eyGxYL .footer__second-row .footer__map-image-container{padding-left:var(--space-xl);}}/*!sc*/
-  .eyGxYL .footer__list{display:flex;margin:0;padding:0;list-style:none;text-align:center;}/*!sc*/
-  @media only screen and (min-width: 48rem){.eyGxYL .footer__list{text-align:left;}}/*!sc*/
-  .eyGxYL .footer__list.contacts{flex-direction:column;gap:var(--space-m);}/*!sc*/
-  @media only screen and (min-width: 48rem){.eyGxYL .footer__list.contacts{flex-direction:row;}}/*!sc*/
-  .eyGxYL .footer__list.contacts .contact-list-item span,.eyGxYL .footer__list.contacts .contact-list-item a{font-size:var(--font-size-2);font-weight:600;color:#0069FA;text-decoration:none;}/*!sc*/
-  .eyGxYL .footer__list.navigation{flex-direction:column;gap:var(--space-xs);}/*!sc*/
-  @media only screen and (min-width: 48rem){.eyGxYL .footer__list.navigation{gap:var(--space-s);}}/*!sc*/
-  .eyGxYL .footer__list.navigation li:first-of-type{font-weight:700;}/*!sc*/
-  .eyGxYL .footer__list.navigation li a{color:#323232;font-weight:400;text-decoration:none;}/*!sc*/
-  .eyGxYL .footer__list.third{align-items:center;flex-direction:column;gap:var(--space-s);}/*!sc*/
-  @media only screen and (min-width: 30rem){.eyGxYL .footer__list.third{flex-direction:row;flex-wrap:wrap;}.eyGxYL .footer__list.third li{padding-right:var(--space-s);border-right:1px solid #323232;}}/*!sc*/
-  .eyGxYL .footer__list.third li:last-of-type{padding-right:0;border-right:none;}/*!sc*/
-  .eyGxYL .footer__list.third li a{color:#323232;font-size:smaller;text-decoration:none;}/*!sc*/
-  .eyGxYL .footer__list li{display:flex;flex-direction:column;}/*!sc*/
-  .eyGxYL .footer__map-image-container{display:flex;flex-direction:column;gap:var(--space-m);}/*!sc*/
-  @media only screen and (min-width: 62rem){.eyGxYL .footer__map-image-container{flex-direction:row;}.eyGxYL .footer__map-image-container .map-image{max-width:400px;max-height:432px;}}/*!sc*/
-  .eyGxYL .footer__map-image-container .footer__address{font-style:normal;}/*!sc*/
-  .eyGxYL .footer__map-image-container .footer__address-container{display:flex;flex-direction:column;align-items:center;gap:var(--space-xs);text-align:center;}/*!sc*/
-  @media only screen and (min-width: 48rem){.eyGxYL .footer__map-image-container .footer__address-container{align-items:flex-start;text-align:left;}.eyGxYL .footer__map-image-container .footer__address-container .footer__address{text-align:left;}}/*!sc*/
-  @media only screen and (min-width: 62rem){.eyGxYL .footer__map-image-container .footer__address-container{max-width:210px;}.eyGxYL .footer__map-image-container .footer__address-container .footer__address-label{margin-bottom:var(--space-2xs);}}/*!sc*/
-  data-styled.g6[id="footercomponent__FooterStyled-sc-mtsm93-0"]{content:"eyGxYL,"}/*!sc*/
-  .eHERNX{display:none;}/*!sc*/
-  @media only screen and (min-width: 62rem){.eHERNX{display:flex;align-items:center;justify-content:center;padding:var(--space-xs) var(--space-s);height:50px;}}/*!sc*/
-  @media only screen and (min-width: 48rem){.eHERNX{justify-content:flex-end;}}/*!sc*/
-  .eHERNX .top-nav__list{display:flex;justify-content:center;align-items:center;gap:var(--space-s);margin:0;padding:0;list-style:none;}/*!sc*/
-  .eHERNX .top-nav__list-item{font-weight:400;color:#636363;border-right:1px solid #636363;padding-right:var(--space-s);line-height:16px;cursor:pointer;}/*!sc*/
-  .eHERNX .top-nav__list-item a{font-weight:400;color:#636363;list-style:none;text-decoration:none;}/*!sc*/
-  .eHERNX .top-nav__list-item:last-child{padding-right:0;border-right:none;}/*!sc*/
-  data-styled.g16[id="topNavcomponent__TopNavigationStyled-sc-whu0rq-0"]{content:"eHERNX,"}/*!sc*/
-  .lacGk{display:block;width:100%;background-color:#F7F9FA;}/*!sc*/
-  .lacGk .header__top-nav-container{display:flex;align-items:center;justify-content:flex-end;width:100%;margin:0 auto;max-width:var(--grid-max-width);border-bottom:1px solid #DFDFDF;}/*!sc*/
-  .lacGk .header__container{position:relative;display:flex;flex-direction:row;align-items:center;justify-content:space-between;width:100%;height:100%;margin:0 auto;padding:var(--space-s);max-width:var(--grid-max-width);}/*!sc*/
-  .lacGk .header__logo-container a.link{display:inline-flex;}/*!sc*/
-  .lacGk .header__logo{max-height:88px;max-width:190px;min-height:68px;}/*!sc*/
-  .lacGk .header__button-container{display:flex;flex-direction:row;align-items:center;}/*!sc*/
-  .lacGk .header__button-container .header__hamburger-container{display:block;}/*!sc*/
-  @media screen and (min-width:1000px){.lacGk .header__button-container .header__hamburger-container{display:none;}}/*!sc*/
-  .lacGk .header__button-container .search-button{display:flex;align-items:center;width:max-content;gap:var(--space-3xs);border:none;cursor:pointer;padding:var(--space-xs) 0;background-color:transparent;transition:all 225ms cubic-bezier(0.33, 1, 0.68, 1);font-weight:500;}/*!sc*/
-  .lacGk .header__button-container .search-button.active{border-bottom:2px solid #0069FA;transition:all 225ms cubic-bezier(0.33, 1, 0.68, 1);}/*!sc*/
-  .lacGk .header__button-container .search-button.active:hover{transition:all 225ms cubic-bezier(0.33, 1, 0.68, 1);}/*!sc*/
-  .lacGk .header__button-container .search-button:hover{border-bottom:2px solid #0069FA;transition:all 225ms cubic-bezier(0.33, 1, 0.68, 1);}/*!sc*/
-  .lacGk .header__button-container .search-button:hover svg path{fill:#323232;}/*!sc*/
-  .lacGk .header__button-container .search-button svg{min-height:24px;min-width:24px;}/*!sc*/
-  .lacGk .header__button-container .search-button svg path{fill:#323232;}/*!sc*/
-  .lacGk .desktop-nav{display:none;}/*!sc*/
-  @media screen and (min-width:1000px){.lacGk .desktop-nav{display:block;}}/*!sc*/
-  .lacGk .desktop-nav__nav-list{display:none;flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1.25rem;list-style-type:none;padding:0;margin:0;}/*!sc*/
-  @media screen and (min-width:1000px){.lacGk .desktop-nav__nav-list{display:flex;}}/*!sc*/
-  .lacGk .desktop-nav__nav-list .desktop-nav__nav-list-item{cursor:pointer;}/*!sc*/
-  .lacGk .desktop-nav__nav-list .desktop-nav__nav-list-item a{text-decoration:none;}/*!sc*/
-  .lacGk .desktop-nav__nav-list .desktop-nav__nav-list-button{display:flex;flex-direction:row;align-items:center;gap:0;font-weight:500;position:relative;border:none;background-color:transparent;color:#323232;padding:var(--space-xs) 0;cursor:pointer;transition:all 225ms cubic-bezier(0.33, 1, 0.68, 1);}/*!sc*/
-  .lacGk .desktop-nav__nav-list .desktop-nav__nav-list-button svg{transition:transform 225ms cubic-bezier(0.33, 1, 0.68, 1);}/*!sc*/
-  .lacGk .desktop-nav__nav-list .desktop-nav__nav-list-button.active{color:#323232;border-bottom:2px solid #0069FA;transition:all 225ms cubic-bezier(0.33, 1, 0.68, 1);}/*!sc*/
-  .lacGk .desktop-nav__nav-list .desktop-nav__nav-list-button.active:hover{transition:all 225ms cubic-bezier(0.33, 1, 0.68, 1);}/*!sc*/
-  .lacGk .desktop-nav__nav-list .desktop-nav__nav-list-button:hover,.lacGk .desktop-nav__nav-list .desktop-nav__nav-list-button:focus-within{cursor:pointer;transition:all 225ms cubic-bezier(0.33, 1, 0.68, 1);}/*!sc*/
-  .lacGk .desktop-nav__nav-list .desktop-nav__nav-list-button:hover{color:#0069FA;}/*!sc*/
-  data-styled.g17[id="headercomponent__HeaderStyled-sc-1xq77r9-0"]{content:"lacGk,"}/*!sc*/
-  .eqhmoy{position:absolute;width:1px;height:1px;margin:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;display:block;padding:1.2rem 1.6rem;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:1px;}/*!sc*/
-  .eqhmoy:focus{position:static;width:auto;height:auto;margin:inherit;overflow:visible;clip:auto;clip-path:none;white-space:inherit;color:white;background-color:black;}/*!sc*/
-  data-styled.g18[id="skipToMainContentcomponent__SkipToMainContentStyled-sc-1c28v29-0"]{content:"eqhmoy,"}/*!sc*/
-  .kuxXGE{height:100%;width:100%;background:#F7F9FA;padding:var(--space-s) 0;}/*!sc*/
-  .kuxXGE ol{padding:0;margin:0;list-style-type:none;background:inherit;display:flex;flex-wrap:wrap;align-items:center;font-size:var(--font-size--1);}/*!sc*/
-  .kuxXGE li{position:relative;display:flex;align-items:center;font-size:inherit;}/*!sc*/
-  .kuxXGE li+li::before{content:url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.1351 17L10 15.8333L13.7297 12L10 8.16667L11.1351 7L16 12L11.1351 17Z' fill='%23757575'/%3E%3C/svg%3E%0A");height:24px;width:24px;line-height:0;}/*!sc*/
-  .kuxXGE li[aria-current='page']{font-weight:bold;}/*!sc*/
-  .kuxXGE a{padding:0.25em;font-size:inherit;text-underline-offset:max(2px,0.05rem);text-decoration-thickness:max(2px,0.05rem);}/*!sc*/
-  data-styled.g19[id="breadcrumbscomponent__BreadcrumbsStyled-sc-2g67f0-0"]{content:"kuxXGE,"}/*!sc*/
-  .dVjRLI{position:relative;}/*!sc*/
-  data-styled.g23[id="maintemplate__MainStyled-sc-8zvc3p-0"]{content:"dVjRLI,"}/*!sc*/
-  </style><meta name="generator" content="Contensis" /></head><body id="body"><div id="root"><div id="app-root"><a class="skipToMainContentcomponent__SkipToMainContentStyled-sc-1c28v29-0 eqhmoy" href="/student-life/chat-to-students#main">Skip to main content</a><header class="headercomponent__HeaderStyled-sc-1xq77r9-0 lacGk"><div class="header__top-nav-container"><nav aria-label="Top Navigation" class="topNavcomponent__TopNavigationStyled-sc-whu0rq-0 eHERNX"><ul class="top-nav__list"><li class="top-nav__list-item"><a class="link link--external " href="https://sunderlandac.sharepoint.com/sites/cs_sj?xsdata=MDV8MDJ8fGQxMDUyNjVhNzQ5ZjRhZmJkMGNjMDhkZTRmODg2OWRmfDE2YTBkOTYwZWU3NDRmNTZhMjJhMTlhZTA1NzkxOGIyfDB8MHw2MzkwMzU2NDQ0NDM2MTEzNDB8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pnME9HSTFNV0V5TVdReE5qUXdNMkU1WXpZek9UUTRORGd5WkRWaE1tUTFRSFJvY21WaFpDNTJNaTl0WlhOellXZGxjeTh4TnpZM09UWTNOalF5T1RRMHw2ZWM0NjY0ZGQwNjg0OTJmMzQxZDA4ZGU0Zjg4NjlkZnxmNGIyMjkzYTRlNzM0YzQ4YTBlMjQ5N2UyYmI3ZDA3NA%253D%253D&amp;sdata=YUo2ZWVKTmphc0RtTkxwWjhFdE5EZEVVSFhQd3FYOS85N2NDRkQzZmhEbz0%253D&amp;ovuser=16a0d960-ee74-4f56-a22a-19ae057918b2%252Cue0qic%2540sunderland.ac.uk" rel="noreferrer" target="_blank">Students</a></li><li class="top-nav__list-item"><a class="link link--external " href="https://sunderlandac.sharepoint.com/sites/home" rel="noreferrer" target="_blank">Staff</a></li><li class="top-nav__list-item"><a class="link " href="/alumni">Alumni</a></li><li class="top-nav__list-item"><a class="link " href="/business-services">Business</a></li><li class="top-nav__list-item"><a class="link link--external " href="https://london.sunderland.ac.uk/" rel="noreferrer" target="_blank">London</a></li><li class="top-nav__list-item"><a class="link link--external " href="https://www.sunderland.edu.hk/" rel="noreferrer" target="_blank">Hong Kong</a></li></ul></nav></div><div class="header__container"><div class="header__logo-container"></div><nav class="desktop-nav" aria-label="Main navigation"><ul class="desktop-nav__nav-list"><li class="desktop-nav__nav-list-item"><button class="desktop-nav__nav-list-button " aria-haspopup="true" aria-expanded="false" aria-controls="submenu-0">Study<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon--chevron " focusable="false"><path d="M7 11.1351L8.16667 10L12 13.7297L15.8333 10L17 11.1351L12 16L7 11.1351Z" fill="currentColor"></path></svg></button></li><li class="desktop-nav__nav-list-item"><a class="link desktop-nav__nav-list-button " href="/international">International</a></li><li class="desktop-nav__nav-list-item"><button class="desktop-nav__nav-list-button " aria-haspopup="true" aria-expanded="false" aria-controls="submenu-2">Student life<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon--chevron " focusable="false"><path d="M7 11.1351L8.16667 10L12 13.7297L15.8333 10L17 11.1351L12 16L7 11.1351Z" fill="currentColor"></path></svg></button></li><li class="desktop-nav__nav-list-item"><button class="desktop-nav__nav-list-button " aria-haspopup="true" aria-expanded="false" aria-controls="submenu-3">Research<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon--chevron " focusable="false"><path d="M7 11.1351L8.16667 10L12 13.7297L15.8333 10L17 11.1351L12 16L7 11.1351Z" fill="currentColor"></path></svg></button></li><li class="desktop-nav__nav-list-item"><button class="desktop-nav__nav-list-button " aria-haspopup="true" aria-expanded="false" aria-controls="submenu-4">About<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon--chevron " focusable="false"><path d="M7 11.1351L8.16667 10L12 13.7297L15.8333 10L17 11.1351L12 16L7 11.1351Z" fill="currentColor"></path></svg></button></li></ul></nav><div class="header__button-container"><button class="search-button " aria-label="Open search" aria-haspopup="true" aria-expanded="false"><span>Search</span><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" class="icon icon--search " focusable="false"><path d="M20.71 19.29L17.31 15.9C18.407 14.5025 19.0022 12.7767 19 11C19 9.41775 18.5308 7.87103 17.6518 6.55544C16.7727 5.23985 15.5233 4.21447 14.0615 3.60897C12.5997 3.00347 10.9911 2.84504 9.43928 3.15372C7.88743 3.4624 6.46197 4.22433 5.34315 5.34315C4.22433 6.46197 3.4624 7.88743 3.15372 9.43928C2.84504 10.9911 3.00347 12.5997 3.60897 14.0615C4.21447 15.5233 5.23985 16.7727 6.55544 17.6518C7.87103 18.5308 9.41775 19 11 19C12.7767 19.0022 14.5025 18.407 15.9 17.31L19.29 20.71C19.383 20.8037 19.4936 20.8781 19.6154 20.9289C19.7373 20.9797 19.868 21.0058 20 21.0058C20.132 21.0058 20.2627 20.9797 20.3846 20.9289C20.5064 20.8781 20.617 20.8037 20.71 20.71C20.8037 20.617 20.8781 20.5064 20.9289 20.3846C20.9797 20.2627 21.0058 20.132 21.0058 20C21.0058 19.868 20.9797 19.7373 20.9289 19.6154C20.8781 19.4936 20.8037 19.383 20.71 19.29ZM5 11C5 9.81332 5.3519 8.65328 6.01119 7.66658C6.67047 6.67989 7.60755 5.91085 8.7039 5.45673C9.80026 5.0026 11.0067 4.88378 12.1705 5.11529C13.3344 5.3468 14.4035 5.91825 15.2426 6.75736C16.0818 7.59648 16.6532 8.66558 16.8847 9.82946C17.1162 10.9933 16.9974 12.1997 16.5433 13.2961C16.0892 14.3925 15.3201 15.3295 14.3334 15.9888C13.3467 16.6481 12.1867 17 11 17C9.4087 17 7.88258 16.3679 6.75736 15.2426C5.63214 14.1174 5 12.5913 5 11Z" fill="currentColor"></path><path d="M20.71 19.29L17.31 15.9C18.407 14.5025 19.0022 12.7767 19 11C19 9.41775 18.5308 7.87103 17.6518 6.55544C16.7727 5.23985 15.5233 4.21447 14.0615 3.60897C12.5997 3.00347 10.9911 2.84504 9.43928 3.15372C7.88743 3.4624 6.46197 4.22433 5.34315 5.34315C4.22433 6.46197 3.4624 7.88743 3.15372 9.43928C2.84504 10.9911 3.00347 12.5997 3.60897 14.0615C4.21447 15.5233 5.23985 16.7727 6.55544 17.6518C7.87103 18.5308 9.41775 19 11 19C12.7767 19.0022 14.5025 18.407 15.9 17.31L19.29 20.71C19.383 20.8037 19.4936 20.8781 19.6154 20.9289C19.7373 20.9797 19.868 21.0058 20 21.0058C20.132 21.0058 20.2627 20.9797 20.3846 20.9289C20.5064 20.8781 20.617 20.8037 20.71 20.71C20.8037 20.617 20.8781 20.5064 20.9289 20.3846C20.9797 20.2627 21.0058 20.132 21.0058 20C21.0058 19.868 20.9797 19.7373 20.9289 19.6154C20.8781 19.4936 20.8037 19.383 20.71 19.29ZM5 11C5 9.81332 5.3519 8.65328 6.01119 7.66658C6.67047 6.67989 7.60755 5.91085 8.7039 5.45673C9.80026 5.0026 11.0067 4.88378 12.1705 5.11529C13.3344 5.3468 14.4035 5.91825 15.2426 6.75736C16.0818 7.59648 16.6532 8.66558 16.8847 9.82946C17.1162 10.9933 16.9974 12.1997 16.5433 13.2961C16.0892 14.3925 15.3201 15.3295 14.3334 15.9888C13.3467 16.6481 12.1867 17 11 17C9.4087 17 7.88258 16.3679 6.75736 15.2426C5.63214 14.1174 5 12.5913 5 11Z" fill="currentColor"></path></svg></button><div class="header__hamburger-container"><div class="hamburger-react" aria-label="Open menu" aria-expanded="false" role="button" style="cursor:pointer;height:48px;position:relative;transition:0.4s cubic-bezier(0, 0, 0, 1);user-select:none;width:48px;outline:none;transform:none" tabindex="0"><div style="background:#062841;height:2px;left:12px;position:absolute;width:24px;top:16px;transition:0.4s cubic-bezier(0, 0, 0, 1);transform:none"></div><div style="background:#062841;height:2px;left:12px;position:absolute;width:24px;top:23px;transition:0.4s cubic-bezier(0, 0, 0, 1);transform:none"></div><div style="background:#062841;height:2px;left:12px;position:absolute;width:24px;top:30px;transition:0.4s cubic-bezier(0, 0, 0, 1);transform:none"></div></div></div></div></div></header><nav class="breadcrumbscomponent__BreadcrumbsStyled-sc-2g67f0-0 kuxXGE"><div class="containercomponent__ContainerStyled-sc-qfbqdf-0 jeMuAR container "><ol><li class="breadcrumb" aria-current="page"></li></ol></div></nav><main id="main" class="maintemplate__MainStyled-sc-8zvc3p-0 dVjRLI"><div class="taptemplate__TapTemplateStyled-sc-15mbs9e-0 page-layout"><div class="containercomponent__ContainerStyled-sc-qfbqdf-0 jeMuAR container "><iframe id="tap-iframe-widget" style="border:none" src="" width="100%" height="700" scrolling="no" data-type="full-widget" data-university-id="361" title="TAP"></iframe></div></div></main><footer class="footercomponent__FooterStyled-sc-mtsm93-0 eyGxYL"><div class="containercomponent__ContainerStyled-sc-qfbqdf-0 jeMuAR container footer__content-container"><div class="footer__top-row"><div class="footer__top-left-column"><div class="footer__logo-container"><img class="logo" src="/image-library/site-config-assets/uos-logo-desktop.x7c55eae4.svg" alt="University of Sunderland"/><img class="tef" src="/image-library/site-config-assets/tef-letterbox.xbbdb297b.png?h=88&amp;w=176&amp;fit=cover&amp;q=80&amp;f=webp" alt="TEF 2023 Teaching Excellence Framework"/></div><ul class="socialLinkscomponent__SocialShareStyled-sc-l5c3qc-0 gbsum"><li><a href="https://www.facebook.com/sunderlanduniversity/" title="Facebook" aria-label="Facebook" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" aria-hidden="true" class="icon icon--facebook social-icon" focusable="false" height="32" width="32"><path d="M240 363.3L240 576L356 576L356 363.3L442.5 363.3L460.5 265.5L356 265.5L356 230.9C356 179.2 376.3 159.4 428.7 159.4C445 159.4 458.1 159.8 465.7 160.6L465.7 71.9C451.4 68 416.4 64 396.2 64C289.3 64 240 114.5 240 223.4L240 265.5L174 265.5L174 363.3L240 363.3z"></path></svg></a></li><li><a href="https://www.instagram.com/sunderlanduni" title="Instagram" aria-label="Instagram" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" aria-hidden="true" class="icon icon--instagram social-icon" focusable="false" height="32" width="32"><path d="M320.3 205C256.8 204.8 205.2 256.2 205 319.7C204.8 383.2 256.2 434.8 319.7 435C383.2 435.2 434.8 383.8 435 320.3C435.2 256.8 383.8 205.2 320.3 205zM319.7 245.4C360.9 245.2 394.4 278.5 394.6 319.7C394.8 360.9 361.5 394.4 320.3 394.6C279.1 394.8 245.6 361.5 245.4 320.3C245.2 279.1 278.5 245.6 319.7 245.4zM413.1 200.3C413.1 185.5 425.1 173.5 439.9 173.5C454.7 173.5 466.7 185.5 466.7 200.3C466.7 215.1 454.7 227.1 439.9 227.1C425.1 227.1 413.1 215.1 413.1 200.3zM542.8 227.5C541.1 191.6 532.9 159.8 506.6 133.6C480.4 107.4 448.6 99.2 412.7 97.4C375.7 95.3 264.8 95.3 227.8 97.4C192 99.1 160.2 107.3 133.9 133.5C107.6 159.7 99.5 191.5 97.7 227.4C95.6 264.4 95.6 375.3 97.7 412.3C99.4 448.2 107.6 480 133.9 506.2C160.2 532.4 191.9 540.6 227.8 542.4C264.8 544.5 375.7 544.5 412.7 542.4C448.6 540.7 480.4 532.5 506.6 506.2C532.8 480 541 448.2 542.8 412.3C544.9 375.3 544.9 264.5 542.8 227.5zM495 452C487.2 471.6 472.1 486.7 452.4 494.6C422.9 506.3 352.9 503.6 320.3 503.6C287.7 503.6 217.6 506.2 188.2 494.6C168.6 486.8 153.5 471.7 145.6 452C133.9 422.5 136.6 352.5 136.6 319.9C136.6 287.3 134 217.2 145.6 187.8C153.4 168.2 168.5 153.1 188.2 145.2C217.7 133.5 287.7 136.2 320.3 136.2C352.9 136.2 423 133.6 452.4 145.2C472 153 487.1 168.1 495 187.8C506.7 217.3 504 287.3 504 319.9C504 352.5 506.7 422.6 495 452z"></path></svg></a></li><li><a href="https://www.tiktok.com/@uniofsunderland" title="TikTok" aria-label="TikTok" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" aria-hidden="true" class="icon icon--tiktokIcon social-icon" focusable="false" height="32" width="32"><path d="M544.5 273.9C500.5 274 457.5 260.3 421.7 234.7L421.7 413.4C421.7 446.5 411.6 478.8 392.7 506C373.8 533.2 347.1 554 316.1 565.6C285.1 577.2 251.3 579.1 219.2 570.9C187.1 562.7 158.3 545 136.5 520.1C114.7 495.2 101.2 464.1 97.5 431.2C93.8 398.3 100.4 365.1 116.1 336C131.8 306.9 156.1 283.3 185.7 268.3C215.3 253.3 248.6 247.8 281.4 252.3L281.4 342.2C266.4 337.5 250.3 337.6 235.4 342.6C220.5 347.6 207.5 357.2 198.4 369.9C189.3 382.6 184.4 398 184.5 413.8C184.6 429.6 189.7 444.8 199 457.5C208.3 470.2 221.4 479.6 236.4 484.4C251.4 489.2 267.5 489.2 282.4 484.3C297.3 479.4 310.4 469.9 319.6 457.2C328.8 444.5 333.8 429.1 333.8 413.4L333.8 64L421.8 64C421.7 71.4 422.4 78.9 423.7 86.2C426.8 102.5 433.1 118.1 442.4 131.9C451.7 145.7 463.7 157.5 477.6 166.5C497.5 179.6 520.8 186.6 544.6 186.6L544.6 274z"></path></svg></a></li><li><a href="https://www.linkedin.com/company/university-of-sunderland" title="LinkedIn" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" aria-hidden="true" class="icon icon--linkedInIcon social-icon" focusable="false" height="32" width="32"><path d="M196.3 512L103.4 512L103.4 212.9L196.3 212.9L196.3 512zM149.8 172.1C120.1 172.1 96 147.5 96 117.8C96 103.5 101.7 89.9 111.8 79.8C121.9 69.7 135.6 64 149.8 64C164 64 177.7 69.7 187.8 79.8C197.9 89.9 203.6 103.6 203.6 117.8C203.6 147.5 179.5 172.1 149.8 172.1zM543.9 512L451.2 512L451.2 366.4C451.2 331.7 450.5 287.2 402.9 287.2C354.6 287.2 347.2 324.9 347.2 363.9L347.2 512L254.4 512L254.4 212.9L343.5 212.9L343.5 253.7L344.8 253.7C357.2 230.2 387.5 205.4 432.7 205.4C526.7 205.4 544 267.3 544 347.7L544 512L543.9 512z"></path></svg></a></li><li><a href="https://www.snapchat.com/@uniofsun" title="Snapchat" aria-label="Snapchat" target="_blank" rel="noopener noreferrer"><svg height="32" width="32" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 468.339 468.339" xml:space="preserve" aria-hidden="true" class="icon icon--snapchat social-icon" focusable="false"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M233.962,33.724c62.857,0.021,115.216,52.351,115.292,115.36c0.018,14.758,0.473,28.348,1.306,40.867 c0.514,7.724,6.938,13.448,14.305,13.448c1.085,0,2.19-0.124,3.3-0.384l19.691-4.616c0.838-0.197,1.679-0.291,2.51-0.291 c5.001,0,9.606,3.417,10.729,8.478c1.587,7.152-2.42,14.378-9.35,16.808l-29.89,12.066c-7.546,3.046-11.599,11.259-9.474,19.115 c23.98,88.654,90.959,79.434,90.959,90.984c0,14.504-50.485,16.552-55.046,21.114s-0.198,26.701-10.389,30.987 c-1.921,0.808-4.65,1.089-7.979,1.089c-7.676,0-18.532-1.498-29.974-1.498c-9.925,0-20.291,1.127-29.404,5.337 c-24.176,11.168-47.484,32.028-76.378,32.028s-52.202-20.86-76.378-32.028c-9.115-4.211-19.478-5.337-29.404-5.337 c-11.441,0-22.299,1.498-29.974,1.498c-3.327,0-6.059-0.282-7.979-1.089c-10.191-4.286-5.828-26.425-10.389-30.987 S25,360.062,25,345.558c0-11.551,66.979-2.331,90.959-90.984c2.125-7.855-1.928-16.068-9.475-19.115l-29.89-12.066 c-6.931-2.43-10.938-9.656-9.35-16.808c1.123-5.062,5.728-8.479,10.729-8.478c0.83,0,1.672,0.094,2.51,0.291l19.691,4.616 c1.11,0.26,2.215,0.384,3.3,0.384c7.366,0,13.791-5.725,14.305-13.448c0.833-12.519,1.289-26.109,1.307-40.867 C119.162,86.075,171.104,33.746,233.962,33.724 M233.97,8.724h-0.009h-0.009C215.19,8.73,196.913,12.5,179.631,19.93 c-16.589,7.131-31.519,17.299-44.375,30.222c-12.839,12.906-22.943,27.889-30.031,44.533c-7.37,17.307-11.118,35.599-11.141,54.368 c-0.011,9.215-0.202,18.158-0.57,26.722l-7.326-1.718c-2.688-0.63-5.452-0.95-8.213-0.951c-7.973-0.001-15.838,2.694-22.146,7.588 c-6.581,5.106-11.196,12.377-12.993,20.474c-4.277,19.273,6.365,38.73,24.807,45.572l21.937,8.855 c-14.526,44.586-41.311,53.13-59.348,58.885c-4.786,1.527-8.92,2.846-12.856,4.799C1.693,327.063,0,340.25,0,345.558 c0,10.167,4.812,19.445,13.551,26.124c4.351,3.326,9.741,6.07,16.477,8.389c9.181,3.161,19.824,5.167,28.474,6.775 c0.418,3.205,1.031,6.648,2.064,10.118c4.289,14.411,13.34,20.864,20.178,23.739c6.488,2.729,13.192,3.044,17.67,3.044 c4.38,0,9.01-0.343,13.912-0.706c5.259-0.39,10.697-0.792,16.062-0.792c8.314,0,14.503,0.992,18.92,3.032 c6.065,2.802,12.497,6.58,19.307,10.579c18.958,11.134,40.445,23.754,67.555,23.754s48.596-12.62,67.554-23.754 c6.81-4,13.242-7.777,19.308-10.579c4.417-2.041,10.606-3.032,18.92-3.032c5.365,0,10.803,0.403,16.061,0.792 c4.902,0.363,9.532,0.706,13.912,0.706c4.478,0,11.181-0.315,17.67-3.044c6.838-2.875,15.889-9.328,20.178-23.739 c1.033-3.47,1.647-6.913,2.064-10.118c8.65-1.609,19.294-3.614,28.474-6.775c6.737-2.319,12.126-5.063,16.477-8.389 c8.738-6.679,13.551-15.957,13.551-26.124c0-5.308-1.693-18.495-17.378-26.278c-3.936-1.953-8.07-3.272-12.856-4.799 c-18.037-5.754-44.822-14.299-59.348-58.885l21.936-8.855c18.442-6.842,29.085-26.3,24.808-45.573 c-1.797-8.097-6.412-15.368-12.993-20.474c-6.308-4.893-14.171-7.588-22.142-7.588c-2.761,0-5.525,0.32-8.215,0.95l-7.327,1.718 c-0.368-8.563-0.559-17.506-0.57-26.722c-0.023-18.784-3.801-37.094-11.23-54.424c-7.131-16.636-17.29-31.615-30.194-44.522 c-12.903-12.906-27.875-23.063-44.498-30.188C271.017,12.497,252.727,8.731,233.97,8.724L233.97,8.724z"></path> </g></svg></a></li><li><a href="https://www.youtube.com/user/sunderlanduniversity" title="Youtube" aria-label="Youtube" target="_blank" rel="noopener noreferrer"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" aria-hidden="true" class="icon icon--youtube social-icon" focusable="false" height="32" width="32"><path d="M581.7 188.1C575.5 164.4 556.9 145.8 533.4 139.5C490.9 128 320.1 128 320.1 128C320.1 128 149.3 128 106.7 139.5C83.2 145.8 64.7 164.4 58.4 188.1C47 231 47 320.4 47 320.4C47 320.4 47 409.8 58.4 452.7C64.7 476.3 83.2 494.2 106.7 500.5C149.3 512 320.1 512 320.1 512C320.1 512 490.9 512 533.5 500.5C557 494.2 575.5 476.3 581.8 452.7C593.2 409.8 593.2 320.4 593.2 320.4C593.2 320.4 593.2 231 581.8 188.1zM264.2 401.6L264.2 239.2L406.9 320.4L264.2 401.6z"></path></svg></a></li></ul></div><ul class="footer__list contacts" aria-label="Contact Numbers"><li class="contact-list-item"><span>Main switchboard:</span><a href="tel:+44 (0)191 515 2000">+44 (0)191 515 2000</a></li><li class="contact-list-item"><span>Course helpline:</span><a href="tel:+44 (0)191 515 3000">+44 (0)191 515 3000</a></li></ul></div><div class="footer__second-row"><div class="footer__second-row-list-container"><ul class="footer__list navigation"><li>About the University</li><li><a class="link " href="/about/contact-us">Contact us</a></li><li><a class="link " href="/news">News</a></li><li><a class="link " href="/events">Events</a></li><li><a class="link link--external " href="https://jobs.sunderland.ac.uk/" rel="noreferrer" target="_blank">Job vacancies</a></li></ul><ul class="footer__list navigation"><li>Useful links</li><li><a class="link " href="/about/how-to-get-here">How to get here</a></li><li><a class="link " href="/about/how-to-get-here/parking">Parking</a></li><li><a class="link link--external " href="https://evision.sunderland.ac.uk/urd/sits.urd/run/siw_lgn" rel="noreferrer" target="_blank">myApplication</a></li></ul></div><div class="footer__map-image-container"><div class="footer__address-container"><div class="footer__address-label h5">The University of Sunderland</div><address class="footer__address">Edinburgh Building<br/>City Campus, Chester Road<br/>Sunderland<br/>SR1 3SD</address></div><img class="map-image" src="/image-library/site-config-assets/uos-footer-map.x0595787d.svg" alt="Map of the UK with Sunderland and London highlighted"/></div></div><div class="footer__third-row"><ul class="footer__list third"><li><a class="link " href="/accessibility">Accessibility</a></li><li><a class="link " href="/privacy-policy">Privacy Policy</a></li><li><a class="link " href="/terms-and-conditions">Terms and conditions</a></li><li><a class="link " href="/data-protection/freedom-of-information">Freedom of information</a></li><li><a class="link " href="/modern-slavery-statement">Modern Slavery Statement</a></li></ul></div></div></footer></div></div><script >window.versionStatus = "published"; window.REDUX_DATA = {"navigation":{"root":null,"error":{"isError":false,"message":null},"isReady":false},"routing":{"canonicalPath":undefined,"currentHostname":"www.sunderland.ac.uk","currentPath":"\u002Fstudent-life\u002Fchat-to-students","currentNode":{},"currentNodeAncestors":[],"currentProject":"website","entryID":null,"entry":null,"error":{"status":404,"statusText":"Not Found","url":"https:\u002F\u002Fapi-uos.cloud.contensis.com\u002Fapi\u002Fdelivery\u002Fprojects\u002Fwebsite\u002Fnodes\u002Fstudent-life\u002Fchat-to-students?entryFields=*&language=en-GB","data":{"logId":"00000000-0000-0000-0000-000000000000","message":"A published node with path 'student-life\u002Fchat-to-students' does not exist","data":{"responseDuration":"00:00:00.0088057"},"type":"error"}},"isError":true,"isLoading":false,"location":{"pathname":"\u002Fstudent-life\u002Fchat-to-students","search":"","hash":"","state":undefined},"mappedEntry":null,"notFound":true,"staticRoute":{"route":{"path":"\u002Fstudent-life\u002Fchat-to-students","component":null,"fetchNode":{"entryMapper":(a,p)=>{const E={node:a,...a.entry||{},state:p};try{return e(E)}catch(N){console.error(N);return}},"linkDepth":0}},"match":{"path":"\u002Fstudent-life\u002Fchat-to-students","url":"\u002Fstudent-life\u002Fchat-to-students","isExact":true,"params":{}}},"statusCode":404,"allowedGroups":undefined},"version":{"commitRef":"508652b1327b51c4589726ce095cf64a05ce3576","buildNo":"433225","contensisVersionStatus":"published"},"siteConfig":{"mappedEntry":{"title":"University of Sunderland","searchLinks":[{"path":"\u002Fundergraduate","children":"Undergraduate study"},{"path":"\u002Fpostgraduate","children":"Postgraduate study"},{"path":"\u002Fopen-days","children":"Open Days"}],"topNavigation":[{"label":"Students","url":"https:\u002F\u002Fsunderlandac.sharepoint.com\u002Fsites\u002Fcs_sj?xsdata=MDV8MDJ8fGQxMDUyNjVhNzQ5ZjRhZmJkMGNjMDhkZTRmODg2OWRmfDE2YTBkOTYwZWU3NDRmNTZhMjJhMTlhZTA1NzkxOGIyfDB8MHw2MzkwMzU2NDQ0NDM2MTEzNDB8VW5rbm93bnxWR1ZoYlhOVFpXTjFjbWwwZVZObGNuWnBZMlY4ZXlKRFFTSTZJbFJsWVcxelgwRlVVRk5sY25acFkyVmZVMUJQVEU5R0lpd2lWaUk2SWpBdU1DNHdNREF3SWl3aVVDSTZJbGRwYmpNeUlpd2lRVTRpT2lKUGRHaGxjaUlzSWxkVUlqb3hNWDA9fDF8TDJOb1lYUnpMekU1T2pnME9HSTFNV0V5TVdReE5qUXdNMkU1WXpZek9UUTRORGd5WkRWaE1tUTFRSFJvY21WaFpDNTJNaTl0WlhOellXZGxjeTh4TnpZM09UWTNOalF5T1RRMHw2ZWM0NjY0ZGQwNjg0OTJmMzQxZDA4ZGU0Zjg4NjlkZnxmNGIyMjkzYTRlNzM0YzQ4YTBlMjQ5N2UyYmI3ZDA3NA%3D%3D&sdata=YUo2ZWVKTmphc0RtTkxwWjhFdE5EZEVVSFhQd3FYOS85N2NDRkQzZmhEbz0%3D&ovuser=16a0d960-ee74-4f56-a22a-19ae057918b2%2Cue0qic%40sunderland.ac.uk"},{"label":"Staff","url":"https:\u002F\u002Fsunderlandac.sharepoint.com\u002Fsites\u002Fhome"},{"label":"Alumni","url":"\u002Falumni"},{"label":"Business","url":"\u002Fbusiness-services"},{"label":"London","url":"https:\u002F\u002Flondon.sunderland.ac.uk\u002F"},{"label":"Hong Kong","url":"https:\u002F\u002Fwww.sunderland.edu.hk\u002F"}],"navigation":[{"label":"Study","link":undefined,"featureCard":{"title":{"children":"Open Days","level":"h2","link":{"path":"\u002Fopen-days","children":"Open Days"}},"image":"\u002Fimage-library\u002Fstudents.xd25a73ac.jpg?w=752&h=502&crop=448,448,0,18","theme":"purple"},"navLevelOne":[{"label":"Subject areas","subHeading":undefined,"url":"\u002Fsubject-areas","navLevelTwo":[]},{"label":"Open Days","subHeading":undefined,"url":"\u002Fopen-days","navLevelTwo":[{"label":"Events","url":"\u002Fevents"}]},{"label":"Undergraduate","subHeading":undefined,"url":"\u002Fundergraduate","navLevelTwo":[]},{"label":"Postgraduate","subHeading":undefined,"url":"\u002Fpostgraduate","navLevelTwo":[]},{"label":"Short courses and CPD","subHeading":undefined,"url":"\u002Fshort-courses-cpd","navLevelTwo":[]},{"label":"Higher and degree apprenticeships","subHeading":undefined,"url":"\u002Fhigher-degree-apprenticeships","navLevelTwo":[]},{"label":"Distance learning","subHeading":undefined,"url":"\u002Fonline-distance-learning","navLevelTwo":[]},{"label":"Study abroad","subHeading":undefined,"url":"\u002Fstudy-abroad","navLevelTwo":[]},{"label":"Fees and funding","subHeading":undefined,"url":"\u002F","navLevelTwo":[{"label":"What are my tuition fees?","url":"\u002Fall-fees"},{"label":"How do I pay my tuition fees?","url":"\u002Fhow-do-i-pay-my-tuition-fees"},{"label":"Payportal","url":"\u002Fpayportal"},{"label":"Student loans and repayments","url":"\u002Fstudent-loans"},{"label":"Scholarships and bursaries","url":"\u002Fscholarships-and-bursaries"},{"label":"Financial support","url":"\u002Ffinancial-support"},{"label":"Cost of living","url":"\u002Fcost-of-living"},{"label":"Placements and job opportunities","url":"\u002Fplacements-and-job-opportunities"}]},{"label":"How to apply","subHeading":undefined,"url":"\u002Fhow-to-apply","navLevelTwo":[{"label":"English language requirements","url":"\u002Fhow-to-apply\u002Fenglish-language-requirements"},{"label":"Applying for Medicine","url":"\u002Fhow-to-apply\u002Fapplying-for-medicine"},{"label":"How to write your university personal statement","url":"\u002Fundergraduate\u002Fhow-to-write-personal-statement"},{"label":"Applicant interviews","url":"\u002Fhow-to-apply\u002Fapplicant-interviews"},{"label":"Tariff point reductions","url":"\u002Fhow-to-apply\u002Ftariff-point-reduction"}]},{"label":"Different types of degrees","subHeading":undefined,"url":"\u002Fdegree-types","navLevelTwo":[]},{"label":"Term dates","subHeading":undefined,"url":"\u002Fterm-dates","navLevelTwo":[]},{"label":"Schools and colleges outreach","subHeading":undefined,"url":"\u002Fundergraduate\u002Fschools-colleges-outreach","navLevelTwo":[]}]},{"label":"International","link":"\u002Finternational","featureCard":null,"navLevelOne":[]},{"label":"Student life","link":undefined,"featureCard":{"title":{"children":"Why Sunderland","level":"h2","link":{"path":"\u002Fstudent-life\u002Flife-in-sunderland\u002Fwhy-choose-sunderland","children":"Why Sunderland"}},"image":"\u002Fimage-library\u002Fnews\u002F77207.xb8e3983b.jpg?w=797&h=448&crop=448,448,183,0","theme":"orange"},"navLevelOne":[{"label":"Life in Sunderland","subHeading":undefined,"url":"\u002Fstudent-life\u002Flife-in-sunderland","navLevelTwo":[]},{"label":"Campus life","subHeading":undefined,"url":"\u002Fstudent-life\u002Fcampus-life","navLevelTwo":[]},{"label":"Accommodation","subHeading":undefined,"url":"\u002Fstudent-life\u002Faccommodation","navLevelTwo":[]},{"label":"Support and wellbeing","subHeading":undefined,"url":"\u002Fstudent-life\u002Fsupport-and-wellbeing","navLevelTwo":[]},{"label":"Welcome hub","subHeading":undefined,"url":"\u002Fstudent-life\u002Fwelcome-hub","navLevelTwo":[{"label":"International arrival guide","url":"\u002Fstudent-life\u002Fwelcome-hub\u002Finternational-arrival-guide"},{"label":"Enrolment","url":"\u002Fstudent-life\u002Fwelcome-hub\u002Fenrolment"},{"label":"Induction","url":"\u002Fstudent-life\u002Fwelcome-hub\u002Finduction-and-timetables"},{"label":"Campus card","url":"\u002Fstudent-life\u002Fwelcome-hub\u002Fcampus-card"},{"label":"IT setup","url":"\u002Fstudent-life\u002Fwelcome-hub\u002Fnew-students-it-setup"},{"label":"Student Handbook","url":"\u002Fstudent-life\u002Fwelcome-hub\u002Fstudent-handbook"}]},{"label":"Team Sunderland","subHeading":undefined,"url":"\u002Fstudent-life\u002Fteam-sunderland","navLevelTwo":[]},{"label":"Virtual experience","subHeading":undefined,"url":"https:\u002F\u002Fexperience.sunderland.ac.uk","navLevelTwo":[]},{"label":"Graduation","subHeading":undefined,"url":"\u002Fgraduation","navLevelTwo":[]}]},{"label":"Research","link":undefined,"featureCard":{"title":{"children":"Everything you need to know about your research degree","level":"h2","link":{"path":"\u002Fresearch\u002Fgraduate-school\u002Feverything-you-need-to-know-about-your-research-degree","children":"Everything you need to know about your research degree"}},"image":"\u002Fasset-bank\u002FUniversal\u002F2024\u002F3\u002F0U8A3050.x387f712a.jpg?w=672&h=448&crop=448,448,144,0","theme":"orange"},"navLevelOne":[{"label":"Research","subHeading":undefined,"url":"\u002Fresearch","navLevelTwo":[]},{"label":"Research Institutes","subHeading":undefined,"url":"\u002F","navLevelTwo":[{"label":"The Helen McArdle Nursing and Care Research Institute","url":"\u002Fresearch\u002Fresearch-institutes\u002Fhelen-mcardle-nursing-and-care-research-institute"},{"label":"The Institute for Economic and Social Inclusion","url":"\u002Fresearch\u002Fresearch-institutes\u002Fthe-institute-for-economic-and-social-inclusion-iesi"},{"label":"John Dawson Drug Discovery and Development Research Institute","url":"\u002Fresearch\u002Fresearch-institutes\u002Fjohn-dawson-drug-discovery-research-institute"},{"label":"Northern Ophthalmic Research and Innovation (NORI) Institute","url":"\u002Fresearch\u002Fresearch-institutes\u002Fnorthern-ophthalmic-research-and-innovation-institute"}]},{"label":"Graduate School","subHeading":undefined,"url":"\u002Fresearch\u002Fgraduate-school","navLevelTwo":[{"label":"PhD Doctor of Philosophy","url":"\u002Fresearch\u002Fgraduate-school\u002Fphd-doctor-of-philosophy"},{"label":"MPhil Master of Philosophy","url":"\u002Fresearch\u002Fgraduate-school\u002Fmphil-master-of-philosophy"},{"label":"PhD by Existing Published or Creative Work","url":"\u002Fresearch\u002Fgraduate-school\u002Fphd-by-existing-published-or-creative-work"}]},{"label":"Clinical Academic Training Office (CATO)","subHeading":undefined,"url":"\u002Fsubject-areas\u002Fmedicine\u002Fcato","navLevelTwo":[]},{"label":"Research staff","subHeading":undefined,"url":"\u002Fresearch\u002Fstaff-profiles","navLevelTwo":[]},{"label":"Research culture","subHeading":undefined,"url":"\u002Fresearch\u002Fresearch-culture","navLevelTwo":[]},{"label":"Research impact","subHeading":undefined,"url":"\u002Fresearch\u002Fresearch-impact","navLevelTwo":[]},{"label":"Research governance, ethics and integrity","subHeading":undefined,"url":"\u002Fresearch\u002Fresearch-governance-ethics-integrity","navLevelTwo":[]},{"label":"Research support","subHeading":undefined,"url":"\u002Fresearch\u002Fresearch-support","navLevelTwo":[]},{"label":"REF 2029","subHeading":undefined,"url":"\u002Fresearch\u002Fref-2029","navLevelTwo":[]}]},{"label":"About","link":undefined,"featureCard":{"title":{"children":"Our achievements","level":"h2","link":{"path":"\u002Fabout\u002Four-achievements","children":"Our achievements"}},"image":"\u002Fasset-bank\u002FUniversal\u002F2022\u002F9\u002F-L9A5034.xdaa4942d.jpg","theme":"orange"},"navLevelOne":[{"label":"About the University","subHeading":undefined,"url":"\u002Fabout","navLevelTwo":[{"label":"Leadership and governance","url":"\u002Fabout\u002Fleadership-and-governance"}]},{"label":"Our achievements","subHeading":undefined,"url":"\u002Fabout\u002Four-achievements","navLevelTwo":[]},{"label":"Sustainability","subHeading":undefined,"url":"\u002Fabout\u002Fsustainability","navLevelTwo":[]},{"label":"News","subHeading":undefined,"url":"\u002Fnews","navLevelTwo":[]},{"label":"Equality, Diversity, and Inclusion","subHeading":undefined,"url":"\u002Fabout\u002Fequality-diversity-inclusion","navLevelTwo":[]},{"label":"How to get here","subHeading":undefined,"url":"\u002Fabout\u002Fhow-to-get-here","navLevelTwo":[]},{"label":"Academic staff","subHeading":undefined,"url":"\u002Fabout\u002Facademic-staff","navLevelTwo":[]}]}],"logo":{"alt":"University of Sunderland","caption":"","height":0,"id":"0da12b52-e4ab-43dd-90b4-c16db45be7bc","src":"\u002Fimage-library\u002Fsite-config-assets\u002Fuos-logo-desktop.x7c55eae4.svg","width":0},"mapImage":{"alt":"Map of the UK with Sunderland and London highlighted","caption":"","height":0,"id":"7c7483ba-e12f-4d82-bda4-42f27efbc3bd","src":"\u002Fimage-library\u002Fsite-config-assets\u002Fuos-footer-map.x0595787d.svg","width":0},"contactNumbers":[{"label":"Main switchboard:","phoneNumber":"+44 (0)191 515 2000"},{"label":"Course helpline:","phoneNumber":"+44 (0)191 515 3000"}],"footerNavigation":[{"label":"News","url":"\u002Fnews"},{"label":"Events","url":"\u002Fevents"},{"label":"Job vacancies","url":"https:\u002F\u002Fjobs.sunderland.ac.uk\u002F"},{"label":"How to get here","url":"\u002Fabout\u002Fhow-to-get-here"}],"footerNavigationColOne":{"label":"About the University","items":[{"label":"Contact us","url":"\u002Fabout\u002Fcontact-us"},{"label":"News","url":"\u002Fnews"},{"label":"Events","url":"\u002Fevents"},{"label":"Job vacancies","url":"https:\u002F\u002Fjobs.sunderland.ac.uk\u002F"}]},"footerNavigationColTwo":{"label":"Useful links","items":[{"label":"How to get here","url":"\u002Fabout\u002Fhow-to-get-here"},{"label":"Parking","url":"\u002Fabout\u002Fhow-to-get-here\u002Fparking"},{"label":"myApplication","url":"https:\u002F\u002Fevision.sunderland.ac.uk\u002Furd\u002Fsits.urd\u002Frun\u002Fsiw_lgn"}]},"supplementalNavigation":[{"label":"Accessibility","url":"\u002Faccessibility"},{"label":"Privacy Policy","url":"\u002Fprivacy-policy"},{"label":"Terms and conditions","url":"\u002Fterms-and-conditions"},{"label":"Freedom of information","url":"\u002Fdata-protection\u002Ffreedom-of-information"},{"label":"Modern Slavery Statement","url":"\u002Fmodern-slavery-statement"}],"address":{"label":"The University of Sunderland","firstLine":"Edinburgh Building","secondLine":"City Campus, Chester Road","city":"Sunderland","postcode":"SR1 3SD"},"award":{"alt":"TEF 2023 Teaching Excellence Framework","caption":"","height":88,"id":"a1796c64-a64b-404f-99bf-c49afac39014","src":"\u002Fimage-library\u002Fsite-config-assets\u002Ftef-letterbox.xbbdb297b.png?h=88&w=176&fit=cover&q=80&f=webp","width":176},"mobileLogo":{"alt":"University of Sunderland","caption":"","height":0,"id":"6dda6cc1-8d09-44e1-93fc-f3d6861fd5e7","src":"\u002Fimage-library\u002Fsite-config-assets\u002Fuos-logo-mobile.x0e2380cb.svg","width":0},"clearing":{"active":false,"message":[{"id":"7f23e363","type":"_heading","value":"Clearing","properties":{"level":2}},{"id":"136fcdb0","type":"_paragraph","value":[{"id":"d1d41ab7","type":"_fragment","value":"Clearing is now open for 2025. For any clearing queries, please call us on "},{"id":"7f34ced4","type":"_link","value":"0191 515 3000","properties":{"link":{"sys":{"uri":"https:\u002F\u002Fsunderland.ac.uk","linkProperties":{"type":"uri"}}}}},{"id":"291ad120","type":"_fragment","value":". For applications use the apply buttons on the page."}]}],"dismissed":false},"socials":[{"type":"Facebook","url":{"path":"https:\u002F\u002Fwww.facebook.com\u002Fsunderlanduniversity\u002F","children":"Facebook","openInNewWindow":true}},{"type":"Instagram","url":{"path":"https:\u002F\u002Fwww.instagram.com\u002Fsunderlanduni","children":"Instagram","openInNewWindow":true}},{"type":"TikTok","url":{"path":"https:\u002F\u002Fwww.tiktok.com\u002F@uniofsunderland","children":"TikTok","openInNewWindow":true}},{"type":"LinkedIn","url":{"path":"https:\u002F\u002Fwww.linkedin.com\u002Fcompany\u002Funiversity-of-sunderland","children":"LinkedIn","openInNewWindow":true}},{"type":"SnapChat","url":{"path":"https:\u002F\u002Fwww.snapchat.com\u002F@uniofsun","children":"Snapchat","openInNewWindow":true}},{"type":"YouTube","url":{"path":"https:\u002F\u002Fwww.youtube.com\u002Fuser\u002Fsunderlanduniversity","children":"Youtube","openInNewWindow":true}}]},"isLoading":false,"isReady":true,"isError":false,"error":null},"course":{"isLoading":false,"isReady":false,"isError":false,"error":null,"selectedIntake":null}}</script> <script  src="/_83dEUg_ba5a46d7-8343-45fd-809f-d7449e8126d9/static/startup-1.0.0.js"></script><script id="modern__LOADABLE_REQUIRED_CHUNKS__" type="application/json" type="module">[]</script><script id="modern__LOADABLE_REQUIRED_CHUNKS___ext" type="application/json" type="module">{"namedChunks":[]}</script>
-  <script async data-chunk="app" src="/_83dEUg_ba5a46d7-8343-45fd-809f-d7449e8126d9/static/modern/js/runtime.9d0219fbc13393d005ad.mjs" type="module"></script>
-  <script async data-chunk="app" src="/_83dEUg_ba5a46d7-8343-45fd-809f-d7449e8126d9/static/modern/js/vendor.bc6bcf072fa6a9b83d10.mjs" type="module"></script>
-  <script async data-chunk="app" src="/_83dEUg_ba5a46d7-8343-45fd-809f-d7449e8126d9/static/modern/js/app.7a960e523383f776b9aa.mjs" type="module"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+     
+    
+                            
+
+
+    
+    <script>
+  dataLayer = [];
+  dataLayer.push({'local_analytics': 'G-V8LVNRBBG1'});
+</script>
+    <!-- Google Tag Manager - Modifed to report to GTM test environment from site test location  -->
+
+<script>(function(w, d, s, l, i) {
+  var hostname = window.location.hostname;
+  var env = '';
+  if (hostname.includes('test.usask.ca')) {
+    env = '&gtm_auth=oo6CDXoFR8OmQDGh3xlJ2g&gtm_preview=env-48&gtm_cookies_win=x';
+  }
+  w[l] = w[l] || [];
+  w[l].push({
+    'gtm.start': new Date().getTime(),
+    event: 'gtm.js'
+  });
+  var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s),
+    dl = l != 'dataLayer' ? '&l=' + l : '';
+  j.async = true;
+  j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl + env;
+  f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-NPKLVP6');</script>
+
+<!-- End Google Tag Manager -->
+
+    
+
+
+    
+
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="text/html; charset=UTF-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=5.0" name="viewport"/>
+<meta content="" name="description"/>
+<link href="//usaskcdn.ca/limestone/stable/css/limestone.min.css" rel="stylesheet" type="text/css"/>
+<!-- Favicons head-base-stable -->
+            <link href="https://usaskcdn.ca/limestone/stable/img/favicon.png" rel="shortcut icon"/>
+            <link href="https://usaskcdn.ca/limestone/stable/img/uofs-crest.svg" rel="icon" type="image/svg+xml"/>
+            <link href="https://usaskcdn.ca/limestone/stable/img/uofs-crest.png" rel="apple-touch-icon"/>
+    
+<!--[if lt IE 9 ]>
+    <link href="https://usaskcdn.ca/limestone/stable/css/ie.css" rel="stylesheet" type="text/css"/>
+    <script src="https://usaskcdn.ca/limestone/stable/js/ie.js"></script>
+<![endif]-->
+<title> Chat with an Arts and Science Student - College of Arts and Science | University of Saskatchewan </title>
+
+
+
+</head>
+<body>
+
+
+
+
+
+     
+    
+                                    
+
+
+    
+    
+                        
+        
+    
+                                                                                                                                                             
+                                                                                                                                
+                                
+                                                        	                                                                                        <header class="uofs-header">				
+                        <a class="sr-only sr-only-focusable" href="#content" tabindex="1">Skip to main content</a>
+                        <div class="uofs-header-masthead" role="banner">
+                                                                                 <a class="uofs-header-crest full" href="http://www.usask.ca/">University of Saskatchewan</a>
+                                                                                                                                                                        
+        
+            
+                        
+                
+                                                                                                                 <a class="uofs-header-sitename uofs-header-sitename-md" href="/index.php">College of Arts and Science</a>
+                                                                                
+                                                    </div>
+                                            <div class="uofs-offcanvas uofs-offcanvas-right">
+                        <button class="btn btn-sm btn-default uofs-offcanvas-toggle" type="button"> 
+                            <span class="sr-only">Toggle </span>Menu 
+                        </button>
+                        <div class="uofs-offcanvas-inner">
+                        <nav class="navbar navbar-default" role="navigation">
+                            <div class="container-fluid">
+                                                            <ul class="nav navbar-nav uofs-header-nav">
+                                    <li><a class="uofs-header-paws" href="https://paws.usask.ca/" title="PAWS">P<i aria-hidden="true" class="uofs-icon uofs-icon-paw"> </i><span class="sr-only">A</span>WS</a></li>
+                                </ul>
+                                                                                                                            <form action="https://search.usask.ca/" class="uofs-header-search" role="search">
+                                        <i aria-hidden="true" class="uofs-icon uofs-icon-search"> </i>
+                                        <label class="sr-only" for="q">Search the U of S</label>
+                                        <input class="form-control" id="q" name="q" placeholder="People, places, web..." type="search"/>
+                                        <button class="sr-only" type="submit">Search</button>
+                                    </form>
+                                                                                        
+                                <ul class="nav navbar-nav navbar-left" role="menu">
+                                                                                                                          
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                                                                                                                                                                            <li class="" role="menuitem">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="dd-students">Students <span class="caret hidden-xs"></span><span class="uofs-icon uofs-icon-forward pull-right"></span></a>
+                            <ul aria-labelledby="dd-students" class="dropdown-menu" role="menu">
+                                                                                  
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/students/future-students.php"  >Future Students</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/students/new-students.php"  >New to Arts and Science</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/students/lc.php"  >Learning Communities</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/students/current-students.php"  >Current Students</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                                                                                                         
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/students/trishmonturecentre.php"  >The Trish Monture Centre </a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/students/graduate-students.php"  >Graduate Students</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/students/programs.php"  >Programs</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/students/scholarships.php"  >Scholarships and Awards</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                                                
+                                                <li class="" role="menuitem"><a href="https://students.usask.ca/academics/go-abroad.php"  target='_blank' >Study Abroad Programs</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                                                                              </ul>
+                        </li>
+                                                                                                                 
+                    
+        
+                                                                                                                                                                                                                                                                            <li class="" role="menuitem">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="dd-research">Research <span class="caret hidden-xs"></span><span class="uofs-icon uofs-icon-forward pull-right"></span></a>
+                            <ul aria-labelledby="dd-research" class="dropdown-menu" role="menu">
+                                                                                  
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/research/index.php"  >Our Research, Scholarly and Artistic Work</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                            <li class="divider"></li>
+                                                                                                                                    <li class="dropdown-header" role="menuitem">Featured People</li>                                                                                          
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                                                                                                         
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/research/featured-people/research-chairs.php"  >Research Chairs</a></li>                                                  
+                                                                                                                                                                                                           
+                    
+        
+                                                                                                                                                    <li class="divider"></li>
+                                                                                                                                                
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/research/units-centre.php"  >Units and Centres</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/research/history.php"  >A History of Research Excellence</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/research/faculty.php"  >Faculty Research</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/research/contact.php"  >RSAW Contacts</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                                                                              </ul>
+                        </li>
+                                                                                                                 
+                    
+        
+                                                                                                                                                                                                                                                                            <li class="" role="menuitem">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="dd-faculty">Faculty <span class="caret hidden-xs"></span><span class="uofs-icon uofs-icon-forward pull-right"></span></a>
+                            <ul aria-labelledby="dd-faculty" class="dropdown-menu" role="menu">
+                                                                                  
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/faculty/index.php"  >Information for Faculty</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                                                
+                                                <li class="" role="menuitem"><a href="https://vpfaculty.usask.ca/index.php"  target='_blank' ><i class='fa fa-external-link'> </i> Vice Provost Faculty Relations</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/faculty/service-excellence-awards.php"  >Service Excellence Awards</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/faculty/mentorship.php"  >Mentorship</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                        
+                                                <li class="" role="menuitem"><a href="https://careers.usask.ca/agreements/usfa/usfa-table-of-contents.php"  ><i class='fa fa-external-link'> </i> Collective Agreements</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                              </ul>
+                        </li>
+                                                                                                                 
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                                                                                                                                                                            <li class="" role="menuitem">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="dd-indigenous">Indigenous <span class="caret hidden-xs"></span><span class="uofs-icon uofs-icon-forward pull-right"></span></a>
+                            <ul aria-labelledby="dd-indigenous" class="dropdown-menu" role="menu">
+                                                                                  
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/indigenous/index.php"  >Vice-Dean Indigenous</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/indigenous/centre-for-indigenous-scholarship.php"  >Centre for Indigenous Scholarship</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                        
+                                                <li class="" role="menuitem"><a href="https://artsandscience.usask.ca/students/learning-communities/isap/"  >Indigenous Student Achievement Pathways (ISAP)</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/indigenous/indigenous-learning-requirement.php"  >Indigenous Learning Requirement </a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/indigenous/our-stories.php"  >Indigenous News and Stories</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                        
+                                                <li class="" role="menuitem"><a href="https://artsandscience.usask.ca/indigenous/index.php#Role"  >Contact</a></li>                                                  
+                                                                                                                                                  </ul>
+                        </li>
+                                                                                                                 
+                    
+        
+                                                                                                                                                                                                                                                                            <li class="" role="menuitem">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="dd-alumni-and-giving">Alumni and Giving <span class="caret hidden-xs"></span><span class="uofs-icon uofs-icon-forward pull-right"></span></a>
+                            <ul aria-labelledby="dd-alumni-and-giving" class="dropdown-menu" role="menu">
+                                                                                  
+                    
+        
+                                                                                                     
+                    
+        
+                                                     
+                    
+        
+                                                     
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/alumni-and-giving/index.php"  >Alumni</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/alumni-and-giving/giving.php"  >Giving</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/alumni-and-giving/get-involved.php"  >Get Involved</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                        
+                                                <li class="" role="menuitem"><a href="https://artsandscience.usask.ca/about/alumni-news.php"  >Alumni and Giving News</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/alumni-and-giving/alumni-of-influence.php"  >Alumni of Influence</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                        
+                                                <li class="" role="menuitem"><a href="http://artsandscience.usask.ca/magazine"  >A&amp;S Magazine</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/alumni-and-giving/contact.php"  >Contact Us</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                 
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                                                                              </ul>
+                        </li>
+                                                                                                                 
+                    
+        
+                                                                                                                                                                                                                                                                            <li class="" role="menuitem">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="dd-community">Community <span class="caret hidden-xs"></span><span class="uofs-icon uofs-icon-forward pull-right"></span></a>
+                            <ul aria-labelledby="dd-community" class="dropdown-menu" role="menu">
+                                                                                  
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                        
+                                                <li class="" role="menuitem"><a href="https://artsandscience.usask.ca/noncredit/"  >Non-Credit Courses</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                        
+                                                <li class="" role="menuitem"><a href="https://kagcag.usask.ca/"  >USask Art Galleries and Collection</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                        
+                                                <li class="" role="menuitem"><a href="https://artsandscience.usask.ca/antiquities/"  >Museum of Antiquities</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                        
+                                                <li class="" role="menuitem"><a href="https://artsandscience.usask.ca/museumofnaturalsciences/"  >Museum of Natural Sciences</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                        
+                                                <li class="" role="menuitem"><a href="https://artsandscience.usask.ca/physics/community/observatory.php"  >USask Observatory</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                        
+                                                <li class="" role="menuitem"><a href="https://artsandscience.usask.ca/scienceoutreach/"  >Science Outreach</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                            <li class="divider"></li>
+                                                                                                                                    <li class="dropdown-header" role="menuitem">Student Communities</li>                                                                                          
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/community/student-communities/student-social-media-directory.php"  >Social Media Directory</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                                                                       
+                    
+        
+                                                                                                                                                                                                                                                              </ul>
+                        </li>
+                                                                                                                 
+                    
+        
+                                                                                                                                                                                                                                                                            <li class="" role="menuitem">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="dd-people">People <span class="caret hidden-xs"></span><span class="uofs-icon uofs-icon-forward pull-right"></span></a>
+                            <ul aria-labelledby="dd-people" class="dropdown-menu" role="menu">
+                                                                                  
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/people/deans-executive-committee.php"  >Dean&apos;s Executive Committee</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/people/index.php"  >Employee Directory</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                 
+                    
+        
+                                                                                                                                                                                                         
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                         
+                    
+        
+                                                     
+                    
+        
+                                                                                                                                                                 
+                    
+        
+                                                     
+                    
+        
+                                                     
+                    
+        
+                                                     
+                    
+        
+                                                     
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/people/college-administration.php"  >College Administration</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/people/diversity.php"  >Diversity</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                                                                              </ul>
+                        </li>
+                                                                                                                 
+                    
+        
+                                                                                                                                                                                                                                                                            <li class="" role="menuitem">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="dd-about">About <span class="caret hidden-xs"></span><span class="uofs-icon uofs-icon-forward pull-right"></span></a>
+                            <ul aria-labelledby="dd-about" class="dropdown-menu" role="menu">
+                                                                                  
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/about/index.php"  >About the College</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                        
+                                                <li class="" role="menuitem"><a href="https://artsandscience.usask.ca/people/exec/brooke-milne.php"  >Dean Brooke Milne</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/about/contact.php"  >Contact Us</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/about/departments.php"  >Departments and Schools</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/about/job-posting.php"  >Careers</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                        
+                                                <li class="" role="menuitem"><a href="https://artsandscience.usask.ca/governance/#FacultyCouncilPurpose"  >Faculty Council</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                                 
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                                 
+                    
+        
+                                                                                                                                                                                                                                                                        
+        
+            
+                        
+                                                                                
+                                                                                                         
+                                                                        
+                                                <li class="" role="menuitem"><a href="/about/news.php"  >News and Events</a></li>                                                  
+                                                                                             
+                    
+        
+                                                     
+                    
+        
+                                                     
+                    
+        
+                                                     
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                                                                                                                                                                                
+        
+                            
+                                                                        
+                                                <li class="" role="menuitem"><a href="https://artsandscience.usask.ca/about/college/plan-2025"  >Plan 2025</a></li>                                                  
+                                                                                             
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                                                                                              </ul>
+                        </li>
+                                                                                                                 
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                         
+                    
+        
+                                                                                                     
+                    
+        
+                                                                                                                         
+                    
+        
+                                                     
+                    
+        
+                                                     
+                    
+        
+                                                     
+                    
+        
+                                                     
+                    
+        
+                                                     
+                    
+        
+                                                                                                                         
+                    
+        
+                                                     
+                    
+        
+                                                     
+                    
+        
+                                                     
+                    
+        
+                                                     
+                    
+        
+                                                     
+                    
+        
+                                                                                                                                                  </ul>
+                                                                    <ul class="nav navbar-nav navbar-right" role="menu">
+                                                                                                                                                                                                                                                                         <li role="menuitem">
+                                                                                                                                                                                                                                                                                                                                                 <div><a class="btn btn-warning navbar-btn" href="https://admissions.usask.ca/colleges/arts-and-science.php"><i class='fa fa-pencil'> </i> Apply Now</a></div>                                                                                                                                                                                                                        </li>
+                                                                                                                                                                                                                                                                             <li role="menuitem">
+                                                                                                                                                                                                                                                                                                                                                 <div><a class="btn btn-primary navbar-btn" href="https://donate.usask.ca/online/artsandscience.php"><i class='fa fa-gift'> </i> Give</a></div>                                                                                                                                                                                                                        </li>
+                                                                                                                        </ul>
+                                                            </div>
+                        </nav>
+                        </div>
+                        </div>
+                                            </header>
+                
+                                
+            
+        
+                                        
+    
+
+
+
+
+
+ 
+
+
+            
+            
+            
+        
+
+		
+		
+
+
+ 
+        
+
+
+
+
+
+
+
+
+		
+		
+
+
+
+
+<div class="uofs-page" data-lastmodifiedby="ape560" data-lastpublishedby="ape560">
+
+
+
+	<div class="uofs-page-content" id="content" role="main">			
+
+	    						
+
+	
+			         		                        										        		
+	
+	                    
+            
+                            		
+	
+	
+	                        	<section class="uofs-section jumbotron uofs-jumbotron uofs-section-bg" id="ChatwithanArtsandScienceStudent" style="background-image:url('images/aerial.jpg')">
+					<div class="container-fluid">
+								
+				
+				
+									                            					<h1 class="">Chat with an Arts and Science Student</h1>
+                        																   	
+        
+            
+                	   
+    
+                	<div class="uofs-subsection" id="ChatwithanArtsandScienceStudent-subsection-0" style="">
+		        
+        		
+				
+				
+				
+									<p class="panel-title"><span class="TextRun Highlight SCXW213840160 BCX8" data-contrast="auto" lang="EN-US" xml:lang="EN-US"><span class="NormalTextRun SCXW213840160 BCX8">Connect with </span><span class="NormalTextRun SCXW213840160 BCX8">our student ambassadors to learn more about programs, </span><span class="NormalTextRun SCXW213840160 BCX8">classes</span><span class="NormalTextRun SCXW213840160 BCX8"> and campus life.</span></span><span class="EOP SCXW213840160 BCX8" data-ccp-props="{}">&#160;</span></p>							
+				
+		            			
+		    	                    			        
+            	                    		        	          		
+													
+    		    			
+					
+		        	</div>
+
+																</div> 			</section>
+    
+		    					
+
+	
+		
+	
+	                    
+            
+                            		
+	
+	
+	            	<section class="uofs-section " id="section-1" style="">
+					<div class="container-fluid">
+								
+				
+				
+																				   	
+        
+            
+                	   
+    
+                	<div class="uofs-subsection" id="section-1-subsection-0" style="">
+		        
+        		
+				
+				
+				
+									<p><span class="NormalTextRun SCXW195261478 BCX8">Follow </span><span class="NormalTextRun SCXW195261478 BCX8">the </span><span class="NormalTextRun CommentStart CommentHighlightPipeRest CommentHighlightRest SCXW195261478 BCX8">steps</span><span class="NormalTextRun CommentHighlightPipeRest SCXW195261478 BCX8"> below t</span>o get started and don&#8217;t hesitate to ask anything that can help you make the best decision for you:</p>
+<p><strong>&#160;STEP 1 </strong> : Select the student ambassador you wish to connect with. <br/> <strong> &#160;STEP 2 </strong> : Create an Ambassador Platform account. <br/> <strong> &#160;STEP 3 </strong> : Start chatting!</p>
+<p><span class="TextRun SCXW151002723 BCX8" data-contrast="auto" lang="EN-US" xml:lang="EN-US"><span class="NormalTextRun CommentStart CommentHighlightPipeRest CommentHighlightRest SCXW151002723 BCX8">While our ambassadors are happy to chat about their </span><span class="NormalTextRun SpellingErrorV2Themed CommentHighlightRest SCXW151002723 BCX8">ArtSci</span><span class="NormalTextRun CommentHighlightRest SCXW151002723 BCX8"> experience, they cannot answer questions related to application processing or study permits. Instead, please contact the&#8239;&#8239;</span></span><a class="Hyperlink SCXW151002723 BCX8" href="mailto:artsci.recruitment@usask.ca" rel="noreferrer noopener" target="_blank"><span class="TextRun Underlined SCXW151002723 BCX8" data-contrast="none" lang="EN-US" xml:lang="EN-US"><span class="NormalTextRun CommentHighlightRest SCXW151002723 BCX8" data-ccp-charstyle="Hyperlink">Arts and Science Recruitment Team</span></span></a><span class="TextRun SCXW151002723 BCX8" data-contrast="auto" lang="EN-US" xml:lang="EN-US"><span class="NormalTextRun CommentHighlightRest SCXW151002723 BCX8">. For immigration matters, please contact the&#8239;&#8239;</span></span><a class="Hyperlink SCXW151002723 BCX8" href="https://students.usask.ca/international/issac.php" rel="noreferrer noopener" target="_blank"><span class="TextRun Underlined SCXW151002723 BCX8" data-contrast="none" lang="EN-US" xml:lang="EN-US"><span class="NormalTextRun CommentHighlightRest SCXW151002723 BCX8" data-ccp-charstyle="Hyperlink">International Student and Study Abroad Centre</span></span></a><span class="TextRun SCXW151002723 BCX8" data-contrast="auto" lang="EN-US" xml:lang="EN-US"><span class="NormalTextRun CommentHighlightRest SCXW151002723 BCX8">.</span></span><span class="EOP CommentHighlightPipeRest SCXW151002723 BCX8" data-ccp-props="{}">&#160;</span></p>							
+				
+		            			
+		                        			        
+            	                  		
+		            
+            
+                                            
+        
+            
+                                
+                
+                                                                                             
+            											
+    		    			
+					
+		        	</div>
+
+																</div> 			</section>
+    
+		    					
+
+	
+		
+	
+	                    
+            
+                            		
+	
+	
+	            	<section class="uofs-section " id="section-2" style="">
+					<div class="container-fluid">
+								
+				
+				
+																				   	
+        
+            
+                	   
+    
+                	<div class="uofs-subsection" id="section-2-subsection-0" style="">
+		        
+        		
+				
+				
+				
+									<p><iframe data-type="full-widget" data-university-id="100061" height="700" id="tap-iframe-widget" scrolling="no" src="" style="border: none;" width="100%"></iframe>
+<script defer="defer" src="https://cdn.theaccessplatform.com/widget_staging.js"></script></p>
+							
+				
+		            			
+		                        			        
+            	                  		
+		            
+            
+                                            
+        
+            
+                                
+                
+                                                                                             
+            											
+    		    			
+					
+		        	</div>
+
+																</div> 			</section>
+    
+	
+	</div> </div> 
+
+
+
+    <script>
+    function feedback_thanks()
+    {
+    $("#feedback").replaceWith('<p style="text-align:center">Thanks for letting us know!</p>');
+    }
+    function submit_feedback(){
+    var feedback_text = $("#feedback_text").val();
+    var referrer = document.referrer != '' ? document.referrer : "unknown";
+    $.post( "https://phpapps.usask.ca/site-feedback/feedback_post-bs3.php", { feedback: feedback_text, page: document.URL, referrer: referrer, sitename: "artsandscience-main", owner: "ape560", timestamp: Date.now() } );
+    }
+
+    </script>
+    <section class="uofs-section">
+    <div class="container-fluid"><div class="row mtlg" role="alert"><div id="feedback"><p style="text-align:center">Was this page helpful?<br/>
+    <button class="btn btn-primary btn-sm" id="helpful" onclick="ga('send','event', 'Feedback', 'Helpful');feedback_thanks()" type="button">Yes</button>
+    <button class="btn btn-danger btn-sm" data-target="#feedbackModal" data-toggle="modal" id="nothelpful" onclick="feedback_thanks()" type="button">No</button></p></div></div>
+    </div>
+    </section>
+    
+    <div aria-hidden="true" aria-label="Page Feedback" class="modal fade" id="feedbackModal" role="dialog" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+           <p>What could make this page better?</p>
+           <textarea aria-label="What could make this page better?" class="form-control" id="feedback_text" name="feedback_text" rows="4"></textarea><br/>
+           <p class="small">Thank you for helping us make the university website better. Your comment will be forwarded to the editor of this page. Please note that this form is not intended to provide customer service. If you need assistance, please <a href="../about/contact.php">contact us</a> directly.</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-primary" data-dismiss="modal" onclick="submit_feedback()" type="button">Send feedback</button>
+            <button class="btn btn-default" data-dismiss="modal" type="button">Dismiss</button>        
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+        
+     
+    
+                                    <br clear="both" /><footer class="uofs-footer"><ul class="list-inline uofs-footer-social"><li><a href="https://www.facebook.com/USaskArtSci" title="Follow on Facebook"><i class="uofs-icon uofs-icon-facebook"></i><span class="text-hide">Follow on Facebook</span></a></li><li><a href="http://www.youtube.com/artsandscienceUofS" title="Follow on YouTube"><i class="uofs-icon uofs-icon-youtube"></i><span class="text-hide">Follow on YouTube</span></a></li><li><a href="http://www.instagram.com/usaskartsci" title="Follow on Instagram"><i class="uofs-icon uofs-icon-instagram"></i><span class="text-hide">Follow on Instagram</span></a></li><li><a href="https://www.linkedin.com/school/usaskartsandscience/" title="Follow on LinkedIn"><i class="uofs-icon uofs-icon-linkedin"></i><span class="text-hide">Follow on LinkedIn</span></a></li><li><a href="https://artsandscience.usask.ca/rss.php" title="Subscribe to our RSS feed"><i class="uofs-icon uofs-icon-feed"></i><span class="text-hide">Subscribe to our RSS feed</span></a></li></ul><style>.cls-1 {
+            fill: #00643d;
+        }
+
+        .cls-2 {
+            fill: #fff;
+        }
+
+        #bwtwn_footer {
+            width: 400px;
+            display: block;
+            filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, .3));
+            position: absolute;
+            top: -90px;
+            z-index: 100;
+            left: 50%;
+            margin-left: -200px;
+            animation: fadein1 1.5s normal ease-out;
+        }
+
+        #jumbotron-footer {
+            background-color: #4d4e53;
+            padding-top: 50px;
+            padding-bottom: 10px;
+            margin: 96px 0 45px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 767px) {
+            #bwtwn_footer {
+                width: 370px;
+                margin-left: -185px;
+            }
+        }
+
+        @media (max-width: 500px) {
+            #bwtwn_footer {
+                width: 290px;
+                margin-left: -145px;
+                top: -70px;
+            }
+
+            #jumbotron-footer {
+                padding-top: 40px;
+            }
+        }
+
+        @media (max-width: 375px) {
+            #bwtwn_footer {
+                width: 230px;
+                margin-left: -115px;
+                top: -58px;
+            }
+
+            #jumbotron-footer {
+                padding-top: 34px;
+            }
+        }
+
+        .uofs-offcanvas-inner #jumbotron-footer {
+            display: none;
+        }</style><section class="uofs-section jumbotron uofs-jumbotron" id="jumbotron-footer"><div class="container-fluid"><div class="uofs-subsection"><svg xmlns="http://www.w3.org/2000/svg" id="bwtwn_footer" viewBox="0 0 503.49 100"><title>Be What the World Needs</title><path class="cls-1"
+                            d="m306.94 48.4.64-.05.6-.17.55-.25.52-.36.43-.45.36-.5.24-.55.16-.59.03-.62-.03-.6-.19-.59-.24-.53-.36-.52-.47-.43-.49-.36-.57-.25-.6-.15-.62-.03h-8.21l.01 7.01zm44.24 7.55.65-.06.6-.16.54-.28.52-.32.79-.99.24-.54.17-.6.02-.6-.01-7.56-.03-.59-.19-.63-.24-.54-.38-.5-.44-.43-.49-.33-.54-.27-.61-.14-.65-.07-8.21.01.02 14.61zm-216.42-7.27 5.75-.01-2.88-7.03zM41.1 53.21l-.45-.54-.32-.22-.35-.16-.71-.11-10.5.02v4.16l10.52-.01.78-.14.62-.38.21-.22.39-.66.11-.73-.14-.7z" /><path class="cls-1"
+                            d="M3.75 11.18v77.66l248.27 7.41 247.71-7.41V11.18L252.02 3.76 3.75 11.18zm40.99 43.99-.24.95-.41.88-.52.76-.74.66-.74.57-.86.43-.95.25H25.01c-.18 0-.27-.09-.27-.27v-1.27c.01-.08.04-.15.09-.2l.5-.48V40.47l-.52-.55a.605.605 0 0 1 0-.19v-1.19c-.01-.14.09-.26.23-.28h11.99l1.09.08 1.07.22 1 .44.95.53.83.71.71.85.55.89.43 1.04.3 1.03v2.11l-.24 1-.36.98-.52.9-.43.57.5.33.65.67.55.8.44.84.24.93.09.93-.14 1.06zm21.6 4.52h-18.7a.252.252 0 0 1-.27-.21v-1.32c0-.07.03-.14.08-.19l.52-.5V40.5l-.52-.55a.326.326 0 0 1-.08-.19v-1.19c-.01-.13.08-.25.21-.27H65.1c.19 0 .28.09.28.27v3.47c.01.13-.08.25-.21.27h-1.32a.338.338 0 0 1-.19-.09l-.57-.55H51.4v7.06h8.89l.57-.57c.05-.05.12-.08.19-.08h1.27c.13-.02.26.07.28.2v4.26c.02.13-.07.26-.2.28h-1.34c-.07 0-.15-.03-.19-.09l-.57-.55h-8.89v4.17h12.97l.52-.51c.05-.06.12-.09.19-.09h1.27c.13-.01.25.08.27.21v3.49c.02.13-.07.25-.21.27a.283.283 0 0 1-.18-.04h.1zm34.99-19.7-.84.52-3.6 17.29v1.59c.02.13-.08.25-.21.27h-5.33a.264.264 0 0 1-.28-.23v-1.68l-3.12-14.82-3.09 14.89v1.59c.01.13-.08.25-.21.27h-5.33a.24.24 0 0 1-.28-.2v-1.71l-3.62-17.23-.88-.52a.28.28 0 0 1-.1-.24V38.5c-.01-.13.08-.25.21-.27h3.86c.18 0 .27.09.27.28v1.66l3.12 14.79 3.39-16.51a.27.27 0 0 1 .27-.22h4.61c.13 0 .2.08.24.22l3.48 16.51 3.1-14.85v-1.55c-.01-.14.09-.26.23-.28h3.92c.13-.01.25.08.27.21v1.32c-.02.07-.06.13-.13.17h.05zm22.69 19.63h-4.09c-.13.02-.25-.08-.27-.21v-1.34c0-.07.03-.14.09-.19l.55-.52v-5.35h-11.83v5.35l.53.52c.06.05.09.12.09.19v1.27c0 .19-.09.28-.27.28h-4.12c-.19 0-.28-.09-.28-.27v-1.27c0-.07.03-.14.08-.19l.55-.52V40.45l-.53-.57a.284.284 0 0 1-.09-.19v-1.12c-.01-.13.08-.25.21-.27h4.17c.14-.01.26.09.28.23v1.24c.02.06.02.13 0 .19l-.57.57v8.19h11.83v-8.21l-.55-.57a.273.273 0 0 1-.08-.19v-1.19c-.01-.14.09-.26.23-.28h4.14c.13-.01.25.08.27.21v1.32c0 .07-.03.14-.08.19l-.52.55v16.98l.52.48c.05.05.08.12.08.19v1.27c-.03.13-.16.21-.29.18a.313.313 0 0 1-.1-.05h.05zm24.58 0h-4a.247.247 0 0 1-.28-.2v-1.66l-2.38-5.69h-8.54l-2.38 5.69v1.58c.02.13-.07.26-.2.28h-4.07c-.19 0-.28-.09-.28-.27v-1.27c0-.09.06-.17.14-.22l.86-.55 7.34-17.78-.24-.22a.284.284 0 0 1-.09-.19v-1.27c-.01-.13.08-.25.21-.27h5.8c.13-.02.26.07.28.2v1.34c0 .07-.03.15-.09.19l-.24.22 7.38 17.78.88.53c.08.05.14.13.14.23v1.27c.01.13-.1.25-.23.25-.03 0-.06 0-.09-.01l.08.04zm16.52-17.45h-1.27c-.06.02-.13.02-.19 0l-.57-.52h-5.12V57.4l.55.55c.05.05.08.12.08.19v1.27c0 .19-.09.28-.27.28h-4.14a.247.247 0 0 1-.28-.2v-1.34c0-.07.03-.14.09-.19l.55-.55V41.67h-5.16l-.57.52c-.06.02-.13.02-.19 0h-1.27c-.19 0-.28-.09-.28-.24v-3.51c-.02-.13.07-.26.2-.28h17.79c.13-.02.26.07.28.2v3.56c0 .15 0 .23-.22.23v.02zm24.74 0h-1.27c-.06.02-.13.02-.19 0l-.57-.52h-5.16v15.76l.55.53c.05.05.07.12.08.19v1.27c.02.13-.08.25-.21.27h-4.21a.252.252 0 0 1-.27-.21v-1.32c0-.07.03-.14.09-.19l.55-.55V41.65h-5.14l-.57.52c-.07.03-.14.03-.2 0h-1.27c-.18 0-.28-.08-.28-.24v-3.48a.24.24 0 0 1 .2-.28h17.79c.13-.02.26.06.28.2v3.56c-.01.09-.08.17-.18.19v.05zm22.36 17.38h-4.09c-.18 0-.27-.09-.27-.28V58c0-.07.03-.14.08-.19l.55-.52v-5.35h-11.83v5.34l.55.52c.05.05.08.12.08.19v1.27c.01.13-.08.25-.21.27h-4.17c-.19 0-.28-.09-.28-.27v-1.27c0-.07.03-.14.09-.19l.53-.51V40.4l-.55-.57a.246.246 0 0 1-.09-.19v-1.19a.24.24 0 0 1 .2-.28H197c.13-.01.25.08.27.21v1.26c.01.06.01.13 0 .19l-.57.57v8.21h11.83V40.4l-.55-.57a.273.273 0 0 1-.08-.19v-1.19c-.01-.13.08-.25.21-.27h4.14c.18 0 .27.09.27.28v1.19c0 .07-.03.14-.09.19l-.52.55v16.98l.52.48c.05.05.07.12.08.19v1.27c-.02.13-.15.22-.28.19h-.01v.05zm22.24 0h-18.7a.252.252 0 0 1-.27-.21v-1.32c0-.07.03-.14.09-.19l.52-.5V40.36l-.52-.55a.326.326 0 0 1-.08-.19v-1.21c-.02-.13.08-.25.21-.27h17.54c.19 0 .28.09.28.27v3.47c.01.13-.08.25-.21.27H232a.338.338 0 0 1-.19-.09l-.57-.55h-11.69v7.06h8.89l.57-.57c.05-.05.12-.08.19-.08h1.27c.13-.02.26.07.28.2v4.19c.02.13-.07.26-.2.28h-1.34c-.07 0-.15-.03-.19-.09l-.57-.55h-8.83v4.18h12.97l.52-.52c.05-.05.12-.08.19-.08h1.27c.13-.01.25.08.27.21v3.49c.02.13-.07.25-.21.27a.297.297 0 0 1-.18-.04v.09zm224.45-7.48H463c.18 0 .27.09.27.28v1.27c.01.06.01.13 0 .19l-.28.3.25.41.43.46.52.42.57.29.62.17h8.05l.74-.3.33-.24.43-.6.14-.33v-1.17l-.17-.36-.22-.36-.25-.27-.32-.22-.74-.28h-7.56l-1.12-.3-.98-.41-.95-.57-.83-.69-.71-.81-.57-.93-.41-.98-.24-1.09-.11-1.09.08-1.05.24-1.04.44-1 .55-.93.7-.85.83-.69.91-.6 1.02-.38 1.05-.28 1.09-.1h3.95l.99.09 1.03.24.95.36.88.46.83.69.7.72.58.85.48.9.3.86.5.28c.09.05.14.14.13.24v1.27c.02.13-.08.25-.21.27h-4.21a.247.247 0 0 1-.28-.2v-1.34c.01-.08.05-.16.11-.22l.27-.24-.22-.41-1-.93-.61-.28-.62-.15h-5.18l-.57.17-.57.25-.48.36-.41.43-.39.55-.24.52-.19.6v.57l.06.65.15.58.28.53.38.5.43.5.5.29.55.28.6.15h6.83l.95.08.98.3.9.41.81.62.71.74.55.88.33.95.19.98v1l-.18 1.02-.34.93-.55.86-.71.76-.79.64-.93.43-.95.28-1 .11h-7.04l-1-.08-1.02-.24-.91-.33-.94-.52-.79-.65-.71-.71-.62-.84-.44-.93-.29-.85-.5-.32a.23.23 0 0 1-.14-.22v-1.27c-.04-.29.11-.38.24-.38v.09zM437.6 37.92h11.99l1.07.08 1.09.22 1 .43.93.55.83.71.7.84.58.9.43 1.04.28 1.03v9.71l-.3 1.09-.41.98-.57.95-.7.8-.8.71-.95.57-.98.43-1.09.28h-13.11a.252.252 0 0 1-.27-.21V57.7a.605.605 0 0 1 0-.19l.52-.48V40.04l-.52-.55a.308.308 0 0 1 0-.19v-1.19c.01-.18.1-.27.28-.27v.08zm-22.51 0h17.47c.19 0 .28.09.28.27v3.47c.01.13-.08.25-.21.27h-1.32c-.07 0-.14-.03-.19-.08l-.57-.55h-11.7v7.06h8.83l.57-.57c.05-.05.12-.09.19-.09h1.27c.18 0 .27.09.27.28v4.12c0 .18-.09.27-.28.27h-1.27c-.07 0-.14-.03-.19-.08l-.57-.55h-8.89v4.17h12.97l.52-.52c.05-.05.12-.08.19-.08h1.27c.13-.02.25.08.27.21v3.37c0 .19-.09.28-.27.28h-18.7a.264.264 0 0 1-.28-.23v-1.32c0-.07.03-.14.09-.19l.52-.5V39.95l-.52-.55a.284.284 0 0 1-.09-.19v-1.19c.03-.13.16-.21.29-.18.02.01.04.01.06.03v.05zm-22.43 0h17.47c.19 0 .28.09.28.27v3.47c.01.13-.08.25-.21.27h-1.32c-.07 0-.14-.03-.19-.08l-.57-.55h-11.7v7.06h8.83l.57-.57c.05-.05.12-.07.19-.08h1.27c.13-.02.25.08.27.21v4.19c0 .18-.09.27-.28.27H406c-.07 0-.14-.03-.19-.09l-.57-.55h-8.89v4.17h12.97l.52-.52c.05-.05.12-.08.19-.08h1.27c.13-.01.25.08.27.21v3.49c.01.13-.08.25-.21.27h-18.75a.247.247 0 0 1-.28-.2v-1.34c0-.07.03-.15.09-.19l.52-.5V40.08l-.52-.53a.402.402 0 0 1-.09-.2v-1.19c.08-.15.17-.24.42-.24h-.09zm-23.15 0h3.6c.09 0 .18.04.23.11l11.76 15.5V40.09l-.48-.52a.284.284 0 0 1-.09-.19v-1.27a.24.24 0 0 1 .2-.28h4.18c.13-.01.25.08.27.21v1.32c0 .07-.03.14-.08.19l-.52.52v16.95l.52.55c.05.05.07.12.08.19v1.27c.01.13-.08.25-.21.27h-3.66a.386.386 0 0 1-.22-.11l-11.8-15.54v13.44l.52.55c.05.05.09.12.09.19v1.27a.24.24 0 0 1-.2.28h-4.17a.252.252 0 0 1-.27-.21v-1.32c0-.07.03-.14.08-.19l.55-.55V40.15l-.55-.5a.35.35 0 0 1-.08-.22v-1.27c-.03-.13.05-.26.18-.29.02 0 .05-.01.07 0v.05zm-30.36.09h11.99l1.07.08 1.09.22 1 .44.93.53.83.71.71.85.57.89.43 1.04.28 1.03v9.7l-.3 1.09-.41.98-.57.97-.7.79-.79.71-.95.57-.99.43-1.08.28h-13.12c-.18 0-.27-.09-.27-.27v-1.27a.605.605 0 0 1 0-.19l.52-.48V40.13l-.52-.55a.308.308 0 0 1 0-.19V38.2c.01-.14.1-.23.28-.23v.04zm-20.74 0h4.09c.13-.01.25.08.27.21v1.26c.01.06.01.13 0 .19l-.52.55V56H334l.51-.52c.05-.05.12-.07.19-.08h1.27c.13-.01.25.08.27.21v3.48a.24.24 0 0 1-.2.28h-17.55a.264.264 0 0 1-.28-.23v-1.32c0-.07.03-.15.09-.19l.55-.52V40.18l-.55-.57a.246.246 0 0 1-.09-.19v-1.19c.01-.11.09-.21.2-.23v.01zm-23.49 0h11.99l1.07.09 1.09.27.98.38.98.62.8.62.71.88.57.93.43.98.28 1.04v2.2l-.29 1.07-.41 1-.57.97-.71.79-.85.71-.95.57-.7.3 3.9 5.17 1.78 1.12c.08.04.13.13.13.22v1.27c.01.13-.08.25-.21.27h-4.6c-.19 0-.28-.09-.28-.27v-1.12l-4.64-6.21h-6.69v5.37l.52.55c.05.05.08.12.08.19v1.27c.01.14-.09.26-.23.28h-4.18c-.2 0-.29-.09-.29-.27V58c0-.07.03-.14.08-.19l.52-.55V40.29l-.52-.51v-.1a.139.139 0 0 1 0-.09v-1.27c-.06-.25.03-.36.22-.36l-.01.05zm-21.61 5.85.22-1.04.43-1 .55-.93.71-.85.86-.67.88-.61 1.05-.38 1.04-.27 1.09-.11h4.74l1.07.09 1.09.27 1 .38.95.62.8.64.71.86.57.93.43.98.25 1.04.08 1.09v7.62l-.08 1.04-.22 1.04-.44 1.03-.57.9-.7.85-.8.71-.95.57-.98.43-1.09.22-1.08.11h-4.75l-1.09-.09-1.03-.24-1.04-.41-.9-.57-.84-.71-.74-.84-.53-.87-.44-1.03-.24-1.04-.11-1.09v-7.62l.1-1.05zm-17.58-5.61c.01-.14.13-.24.27-.23h4.61c.13 0 .2.08.24.22l3.49 16.51 3.09-14.86v-1.6c-.01-.14.09-.26.23-.28h3.86c.13-.01.25.08.27.21v1.32c.01.1-.05.2-.14.24l-.84.52-3.61 17.31v1.58c.01.14-.09.26-.23.28h-5.31a.247.247 0 0 1-.28-.2v-1.71l-3.12-14.82-3.07 14.88v1.59c.01.13-.08.25-.21.27h-5.33a.24.24 0 0 1-.28-.2v-1.72l-3.62-17.21-.88-.52a.28.28 0 0 1-.1-.24v-1.27c-.01-.13.08-.25.21-.27h3.86c.18 0 .27.09.27.28v1.65l3.12 14.8 3.5-16.53z" /><path class="cls-1"
+                            d="m449.62 55.82.66-.05.6-.17.54-.28.52-.33.79-.98.24-.54.17-.6.02-.6-.01-7.55-.02-.6-.2-.62-.24-.55-.39-.5-.43-.43-.5-.33-.54-.26-.6-.14-.65-.08-8.21.01.02 14.61zM276.68 53.1l.16.6.28.59.33.5.43.41.5.33.6.24.59.19.57.02h4.72l.68-.06.58-.17.54-.24.52-.35.41-.41.38-.52.24-.57.17-.6.02-.57-.01-7.58-.03-.63-.19-.57-.24-.54-.39-.5-.43-.48-.5-.33-.57-.24-.6-.17-.59-.02h-4.72l-.63.06-.57.16-.63.25-.49.35-.41.43-.32.52-.25.55-.19.6-.08.59.02 7.56zm-239-4.34.57-.18.55-.27.49-.38.48-.45.33-.48.25-.54.16-.6.05-.6-.05-.61-.19-.62-.25-.55-.36-.52-.43-.38-.52-.35-.55-.27-.6-.14-.64-.08-8.21.02v7.06l8.23-.01z" /><path class="cls-2"
+                            d="M252.13 0h-.22L3.65 7.42 0 7.53v84.95l3.65.1L251.92 100h.22l247.71-7.42 3.65-.1V7.53l-3.65-.11L252.13 0zm247.55 88.83-247.71 7.41L3.75 88.83V11.18l248.27-7.42 247.71 7.42-.05 77.65z" /><path class="cls-2"
+                            d="m44.5 52.36-.44-.84-.55-.8-.65-.67-.5-.33.43-.57.52-.9.36-.98.24-1v-2.11l-.3-1.03-.43-1.04-.55-.89-.71-.85-.83-.71-.95-.53-1-.44-1.07-.22-1.09-.08H24.99a.264.264 0 0 0-.28.23v1.24c-.01.06-.01.13 0 .19l.52.55v16.98l-.5.48c-.05.06-.08.13-.09.2v1.27c0 .18.09.28.27.27h15.27l.95-.25.87-.43.74-.57.74-.66.52-.76.41-.88.24-.95.09-.95-.09-.93-.15-1.04zm-15.75-10.6h8.21l.66.08.6.14.55.27.52.36.43.38.36.52.24.55.2.62v1.21l-.17.6-.24.55-.33.48-.5.44-.48.38-.55.27-.57.17-.69.06h-8.23l-.01-7.08zm12.54 13.19-.38.66-.22.22-.64.38-.76.14H28.77v-4.17h10.51l.7.1.36.17.33.22.43.55.17.3.14.7-.12.73zm24.96.77h-1.27c-.07 0-.15.03-.19.09l-.52.51H51.3v-4.15h8.89l.57.55c.05.06.12.09.19.09h1.27c.13-.01.22-.13.22-.25v-4.12c.02-.13-.08-.25-.21-.27h-1.34c-.07 0-.14.03-.19.08l-.57.57h-8.89v-7.06h11.69l.57.55c.05.05.12.08.19.09h1.27c.13.01.25-.08.27-.21V38.6c0-.18-.09-.27-.28-.27H47.47a.252.252 0 0 0-.27.21v1.32c0 .07.03.14.08.19l.52.55v16.97l-.52.5c-.05.05-.08.12-.08.19v1.27c-.01.13.08.25.21.27h18.75c.13.02.26-.07.28-.2v-3.51c.06-.12 0-.26-.12-.32-.01-.04-.04-.05-.07-.05zm34.91-17.5h-3.87a.264.264 0 0 0-.28.23v1.66l-3.1 14.85-3.48-16.51c0-.14-.11-.22-.24-.22h-4.61a.26.26 0 0 0-.27.22l-3.39 16.51-3.12-14.79v-1.61c0-.19-.09-.28-.27-.28h-3.81a.252.252 0 0 0-.27.21v1.32c-.01.09.03.18.1.24l.88.52 3.62 17.23v1.63c-.02.13.06.26.2.28h5.36c.13.01.25-.08.27-.21v-1.64l3.09-14.89 3.12 14.82v1.64c-.01.14.09.26.23.28h5.31c.13.02.26-.07.28-.2v-1.66l3.61-17.29.84-.52c.09-.04.15-.14.14-.24v-1.27c.06-.12.01-.26-.11-.32-.09-.02-.17-.02-.23.01zm23 19.71-.52-.48V40.46l.52-.55c.05-.05.08-.12.08-.19v-1.27a.252.252 0 0 0-.21-.27h-4.17a.264.264 0 0 0-.28.23v1.24c0 .07.03.14.08.19l.55.57v8.31h-11.83v-8.21l.57-.57c.02-.06.02-.13 0-.19v-1.19a.264.264 0 0 0-.23-.28h-4.1a.252.252 0 0 0-.27.21v1.26c0 .07.03.14.09.19l.53.57v16.92l-.55.52c-.05.05-.08.12-.08.19v1.27c0 .18.09.27.28.27h4.12c.18 0 .27-.09.27-.28v-1.27c0-.07-.03-.15-.09-.19l-.53-.52v-5.35h11.83v5.35l-.55.52c-.05.05-.09.12-.09.19v1.27c-.02.13.07.26.2.28h4.16c.13.01.25-.08.27-.21v-1.32a.29.29 0 0 0-.05-.22zm24.53-.07-.88-.53-7.38-17.78.24-.22c.06-.05.09-.12.09-.19v-1.27c.02-.13-.08-.25-.21-.27h-5.82a.252.252 0 0 0-.27.21v1.32c0 .07.03.14.09.19l.24.22-7.34 17.78-.86.55c-.08.04-.14.12-.14.22v1.27c0 .18.09.27.28.27h4c.13.02.25-.08.27-.21v-1.65l2.36-5.7h8.54l2.38 5.69v1.59c-.02.13.08.25.21.27h4.07c.13.02.26-.06.28-.2v-1.35a.322.322 0 0 0-.15-.21zm-13.97-9.18 2.88-7.04 2.87 7.02-5.75.02zm30.38-10.53h-17.72c-.13-.02-.25.08-.27.21v3.56c0 .15.09.24.28.24h1.27c.06.02.13.02.19 0l.57-.52h5.16v15.75l-.55.55c-.05.05-.09.12-.09.19v1.27c-.02.13.08.25.21.27h4.21c.18 0 .27-.09.27-.28v-1.27c0-.07-.03-.14-.08-.19l-.55-.55V41.63h5.16l.57.52c.06.02.13.02.19 0h1.27c.18 0 .27-.08.27-.24v-3.49a.244.244 0 0 0-.16-.3c-.06-.03-.14-.01-.2.03zm24.75-.04h-17.71a.24.24 0 0 0-.28.2v3.56c0 .17.1.24.28.24h1.27c.07.03.14.03.2 0l.57-.52h5.12v15.75l-.55.55c-.05.05-.09.12-.09.19v1.27c-.01.13.08.25.21.27h4.23c.13.02.26-.07.28-.2v-1.34c0-.07-.03-.14-.08-.19l-.55-.53V41.59h5.16l.57.52c.06.02.13.02.19 0h1.27c.12.02.24-.06.27-.19v-3.55a.246.246 0 0 0-.15-.31c-.06-.02-.14 0-.21.05zm22.56 19.7-.52-.48V40.35l.44-.51c.05-.05.09-.12.09-.19v-1.19c0-.19-.09-.28-.27-.28h-4.09a.252.252 0 0 0-.27.21v1.24c0 .07.03.14.08.19l.55.57v8.21H196.6v-8.2l.57-.57c.01-.06.01-.13 0-.19v-1.21a.252.252 0 0 0-.21-.27h-4.17a.24.24 0 0 0-.28.2v1.27c0 .07.03.15.09.19l.55.57v16.93l-.53.51c-.05.05-.09.12-.09.19v1.27c0 .18.09.27.28.27h4.12c.13.01.25-.08.27-.21v-1.32c0-.07-.03-.14-.08-.19l-.55-.52v-5.34h11.83v5.35l-.55.52c-.05.05-.08.12-.08.19v1.27c0 .19.09.28.27.28h4.09c.13.02.26-.07.28-.2v-1.34c.03-.07.03-.16 0-.24zm22.05-2.31h-1.27c-.07 0-.14.03-.19.08l-.52.52h-12.97v-4.18h8.83l.57.55c.05.06.12.09.19.09h1.27c.13.02.25-.08.27-.21v-4.19c.02-.13-.08-.25-.21-.27h-1.34c-.07 0-.14.03-.19.08l-.57.57h-8.89v-7.06h11.69l.57.55c.05.05.12.08.19.09h1.27c.13.01.25-.08.27-.21v-3.52c0-.18-.09-.27-.28-.27h-17.47a.247.247 0 0 0-.28.2v1.28c0 .07.03.14.08.19l.52.55v16.97l-.52.5c-.05.05-.09.12-.09.19v1.27c-.01.13.08.25.21.27h18.75c.13.02.26-.07.28-.2v-3.51c.04-.15-.03-.29-.17-.33.01 0 .01 0 0 0zm14.71-17.19c0-.19-.09-.28-.27-.28h-3.81a.252.252 0 0 0-.27.21v1.32c-.01.09.03.18.1.24l.88.52 3.62 17.21v1.64c-.02.13.06.26.2.28h5.36c.13.01.25-.08.27-.21V57.6l3.09-14.89 3.12 14.82v1.64c-.02.13.08.25.21.27h5.28c.14.01.26-.09.28-.23v-1.6l3.53-17.33.84-.52c.09-.04.15-.14.14-.24v-1.27a.252.252 0 0 0-.21-.27h-3.86a.264.264 0 0 0-.28.23v1.61L264.3 54.7l-3.49-16.51c0-.14-.11-.22-.24-.22h-4.61c-.14-.01-.25.09-.27.23l-3.39 16.51-3.12-14.75v-1.65zm24.14 15.31.24 1.04.44 1.03.55.88.74.84.84.71.9.57 1.04.41 1.03.24 1.09.09h4.75l1.08-.11 1.09-.22.98-.43.95-.57.8-.71.7-.85.57-.9.44-1.03.22-1.04.08-1.04v-7.62l-.08-1.09-.25-1.04-.43-.98-.57-.93-.71-.86-.8-.64-.95-.62-1-.38-1.09-.27-1.08-.1h-4.74l-1.09.11-1.04.27-1.05.38-.88.61-.86.67-.71.85-.55.93-.43 1-.22 1.04-.11 1.07v7.62l.11 1.07zm3.37-9.27.19-.6.24-.55.33-.52.41-.43.5-.36.62-.24.57-.17.62-.06h5.33l.6.17.57.24.5.33.43.48.38.5.25.55.19.57v8.81l-.17.6-.25.57-.37.52-.42.41-.51.36-.55.24-.57.17h-5.97l-.6-.19-.61-.24-.48-.33-.44-.41-.32-.5-.28-.6-.17-.6-.11-.6v-7.62l.09-.5zm17.97-4.75v.1l.52.51v16.96l-.52.55c-.05.05-.08.12-.08.19v1.27c0 .18.09.27.29.27h4.09c.14.01.26-.09.28-.23V57.9c0-.07-.03-.14-.08-.19l-.52-.55v-5.37h6.73L310 58v1.12c0 .18.09.27.28.27h4.55c.13.01.25-.08.27-.21v-1.32a.26.26 0 0 0-.13-.22l-1.78-1.12-3.9-5.17.7-.3.95-.57.85-.71.71-.79.57-.97.41-1 .29-1.07v-2.22l-.28-1.04-.43-.98-.57-.93-.71-.88-.8-.62-.98-.62-.98-.38-1.09-.27-1.07-.09h-11.97c-.2 0-.29.1-.29.28v1.27c0 .06.02.1.05.14zm12.24 1.8h.64l.6.15.57.25.5.36.46.43.36.52.25.53.19.58v1.22l-.17.6-.24.55-.36.5-.43.46-.52.36-.55.25-.6.17h-8.87v-7.01l8.17.08zm11.33-1.74.55.57v16.93l-.55.52c-.06.05-.09.12-.09.19v1.27c-.01.14.09.26.23.28h17.52c.13.02.26-.06.28-.2v-3.51a.252.252 0 0 0-.21-.27h-1.32c-.07 0-.14.03-.19.08l-.51.52h-11.7V40.27l.52-.55c.01-.06.01-.13 0-.19v-1.21a.252.252 0 0 0-.21-.27h-4.12a.264.264 0 0 0-.28.23v1.24c0 .06.03.11.08.14zm20.72-.03.52.55v16.98l-.52.48c-.01.06-.01.13 0 .19v1.27c0 .18.09.28.27.27h13.12l1.08-.28.99-.43.95-.57.79-.71.7-.79.57-.97.41-.98.3-1.09v-9.7l-.28-1.03-.43-1.04-.57-.89-.71-.85-.83-.71-.93-.53-1-.44-1.09-.22-1.07-.08h-11.99c-.18 0-.27.09-.27.28v1.19c-.01.04-.02.07-.01.1zm12.19 1.71.65.08.6.14.55.27.5.33.43.43.38.5.25.55.19.62V53l-.17.6-.24.55-.8.99-.51.32-.55.28-.6.17h-8.89V41.29l8.21.05zm18.19-1.72.55.5v16.95l-.55.55c-.05.05-.07.12-.08.19v1.27c-.01.13.08.25.21.27h4.2c.13.02.26-.06.28-.2V57.8c0-.07-.03-.14-.09-.19l-.52-.55v-13.4l11.76 15.52c.05.06.13.11.22.11h3.6c.13.01.25-.08.27-.21v-1.32c0-.07-.03-.14-.08-.19l-.52-.55V40.07l.52-.52c.05-.05.08-.12.08-.19v-1.27a.252.252 0 0 0-.21-.27h-4.14a.24.24 0 0 0-.28.2v1.35c0 .07.03.14.09.19l.48.52v13.44l-11.74-15.55a.259.259 0 0 0-.23-.11h-3.6a.252.252 0 0 0-.27.21v1.32c0 .08.01.16.05.23zm23.15-.05.52.53v16.98l-.52.5c-.06.05-.09.12-.09.19v1.27c-.02.13.08.25.21.27h18.77c.13.01.25-.08.27-.21v-3.5a.252.252 0 0 0-.21-.27h-1.32c-.07 0-.14.03-.19.08l-.52.52h-12.84v-4.17h8.89l.57.55c.05.05.12.09.19.09h1.27c.19 0 .28-.09.28-.27v-4.12a.247.247 0 0 0-.2-.28h-1.34c-.07 0-.14.03-.19.08l-.57.57h-8.83v-7.06h11.7l.57.55c.05.05.12.08.19.08h1.27c.13.01.25-.08.27-.21v-3.52c0-.18-.09-.27-.28-.27h-17.47c-.19 0-.28.09-.28.27v1.19c-.06.04-.1.1-.12.16zm22.43-.04.52.55v16.98l-.52.5c-.05.05-.09.12-.09.19v1.27c-.01.14.09.26.23.28h18.75c.18 0 .27-.09.27-.28v-3.43a.247.247 0 0 0-.2-.28h-1.34c-.07 0-.14.03-.19.08l-.52.52H418.9v-4.17h8.89l.57.55c.05.05.12.08.19.08h1.27c.19 0 .28-.09.28-.27v-4.12c0-.19-.09-.28-.27-.28h-1.27c-.07 0-.14.03-.19.09l-.57.57h-8.92V41.3h11.7l.57.55c.05.05.12.08.19.08h1.27c.13.01.25-.08.27-.21V38.2c0-.18-.09-.27-.28-.27h-17.52a.24.24 0 0 0-.28.2v1.27c.03.05.06.1.1.13zm22.49-.02.52.55v16.98l-.52.48c-.01.06-.01.13 0 .19v1.27c-.01.13.08.25.21.27h13.16l1.09-.28.98-.43.95-.57.8-.71.7-.8.57-.95.41-.98.3-1.09v-9.71l-.28-1.03-.43-1.04-.58-.9-.7-.84-.83-.71-.93-.55-1-.43-1.09-.22-1.07-.08h-11.99c-.18 0-.27.09-.27.28v1.19c0 .04-.01.07 0 .11zm12.18 1.7.66.08.6.14.55.27.5.33.43.43.38.5.25.55.19.62v8.82l-.17.6-.25.55-.79.98-.51.33-.55.28-.6.17h-8.89V41.22l8.2-.01zm9.21 12.5.5.32.29.85.44.93.62.84.71.71.79.65.94.52.91.33 1.02.24 1 .08h7.04l1-.11.95-.28.93-.43.79-.64.71-.76.55-.86.33-.93.18-1.02v-1l-.19-.98-.33-.95-.55-.88-.71-.74-.81-.62-.9-.41-.98-.3-.95-.08h-6.83l-.6-.15-.55-.28-.5-.29-.43-.5-.38-.5-.28-.53-.15-.58-.06-.65v-.57l.19-.6.24-.52.39-.55.41-.43.48-.36.57-.25.57-.17h5.18l.62.15.61.28 1 .93.22.41-.27.24c-.06.05-.11.13-.11.22v1.27c-.02.13.08.25.21.27h4.22c.13.02.26-.07.28-.2v-1.34c.01-.1-.04-.19-.13-.24l-.5-.28-.3-.86-.48-.9-.58-.85-.7-.72-.83-.69-.88-.46-.95-.36-1.03-.24-.99-.09h-3.95l-1.09.1-1.05.28-1.02.38-.91.6-.83.69-.7.85-.55.93-.44 1-.24 1.04-.08 1.05.11 1.09.24 1.09.41.98.57.93.71.81.83.69.95.57.98.41 1.12.3h7.56l.74.28.32.22.25.27.22.36.17.36v1.17l-.14.33-.43.6-.33.24-.74.3h-8.08l-.62-.17-.57-.29-.52-.42-.43-.46-.25-.41.28-.3c.01-.06.01-.13 0-.19V52.2c0-.19-.09-.28-.27-.28h-4.04c-.19 0-.28.09-.28.27v1.27c-.01.11.05.21.16.25z" /></svg><div class="h5">THE CAMPAIGN FOR THE UNIVERSITY OF SASKATCHEWAN</div><div class="row" style="padding-bottom: 20px; padding-top: 10px;"><div class="col-xs-0 col-sm-2 col-md-3"></div><div class="col-xs-12 col-sm-8 col-md-6"><p><strong>Thank you!</strong>&nbsp; With your support, USask's&nbsp;<a class="text-white" href="https://give.usask.ca"><em>Be What the World Needs campaign</em></a>&nbsp;raised a historic amount to help tackle the world's greatest challenges.</p></div><div class="col-xs-0 col-sm-2 col-md-3"></div></div></div></div></section><a class="uofs-footer-logo" href="http://www.usask.ca/">University of Saskatchewan</a><div class="uofs-land-acknowledgement"><div class="indigenous_symbols"></div><p>The University of Saskatchewan's main campus is situated on <a
+                    href="https://indigenous.usask.ca/indigenization-reconciliation/Land-Acknowledgement.php">Treaty 6
+                    Territory and the Homeland of the Métis.</a></p></div><p class="uofs-copyright">© University of Saskatchewan<br /><a
+                href="https://www.usask.ca/disclaimer.php">Disclaimer</a>|<a
+                href="https://www.usask.ca/privacy-statement.php">Privacy</a>|<a
+                href="https://www.usask.ca/accessibility.php">Accessibility</a></p></footer>    
+
+ 
+
+<script crossorigin="anonymous" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+    /* if jQuery won't load from google CDN, load it from Usask CDN    */
+    /* need to use 'usescape' to cooperate with Cascade XML validation */
+    if (typeof jQuery == 'undefined') {
+        document.write(unescape("%3Cscript src='//usaskcdn.ca/limestone/stable/js/jquery-3.6.0.min.js' type='text/javascript'%3E%3C/script%3E"));
+    }
+</script>
+<script src="https://usaskcdn.ca/limestone/stable/js/limestone.min.js"></script>
+<script src="https://limestone.usask.ca/limestone/1.4.0/js/embedded-feed.min.js" type="text/javascript"></script>
+
+ 
+</body>
+</html>
