@@ -1210,8 +1210,7 @@
 				
 									<p><iframe data-type="full-widget" data-university-id="109" height="700" id="tap-iframe-widget" scrolling="no" src="" style="border: none;" width="100%"></iframe>
 <script defer="defer">
-
-  /* eslint-env browser */
+/* eslint-env browser */
 /* global document, window */
 /**
  * Replaces the iframe#tap-iframe-widget with an inline widget:
@@ -1223,7 +1222,7 @@
  * data-university-id / data-group-id) are not yet ready for the new
  * implementation and will fall back to the old iframe-based widget_old.js.
  */
-(function () {
+ (function () {
   // University IDs (strings, data-university-id) → old iframe widget.
   var LEGACY_UNIVERSITY_IDS = [
     "2102", // Sheridan College
@@ -1319,16 +1318,14 @@
     parent.replaceChild(wrapper, iframe);
 
     // Shield the widget from jQuery's document-level event delegation.
-    // jQuery intercepts events bubbling out of the shadow DOM, causing buttons/tabs
-    // to require a double-press. Stop propagation at the wrapper boundary so jQuery
-    // never sees these events, while the shadow DOM handles them normally.
-    if (window.jQuery || window.$) {
-      ["click", "mousedown", "mouseup", "keydown", "keyup"].forEach(function (type) {
-        wrapper.addEventListener(type, function (e) {
-          e.stopPropagation();
-        });
+    // jQuery (loaded after this script) intercepts events bubbling out of the shadow DOM,
+    // causing buttons/tabs to require a double-press. Always stop propagation at the
+    // wrapper boundary so jQuery never sees these events; harmless on jQuery-free pages.
+    ["click", "mousedown", "mouseup", "keydown", "keyup"].forEach(function (type) {
+      wrapper.addEventListener(type, function (e) {
+        e.stopPropagation();
       });
-    }
+    });
 
     window.tap3Props = {
       API_TYPE: "tap",
@@ -1338,7 +1335,7 @@
     var loaderScript = document.createElement("script");
     loaderScript.crossOrigin = "anonymous";
     loaderScript.async = true;
-    var loaderFromEnv = 'https://tappage.tap.st/';
+    var loaderFromEnv = process.env.TAP_WIDGET_LOADER_URL;
     loaderScript.src =
       (loaderFromEnv && loaderFromEnv.length > 0 ? loaderFromEnv : base) +
       "widget-loader.js";
@@ -1354,6 +1351,7 @@
     initWidget();
   }
 })();
+
 
 </script></p>
 							
