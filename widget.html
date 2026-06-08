@@ -1335,7 +1335,7 @@
     var loaderScript = document.createElement("script");
     loaderScript.crossOrigin = "anonymous";
     loaderScript.async = true;
-    var loaderFromEnv = process.env.TAP_WIDGET_LOADER_URL;
+    var loaderFromEnv = "https://tappage.tap.st/";
     loaderScript.src =
       (loaderFromEnv && loaderFromEnv.length > 0 ? loaderFromEnv : base) +
       "widget-loader.js";
